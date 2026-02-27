@@ -1,0 +1,3445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPERTZ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="stars">
+  <header>
+    <h1>ARCHIVES OF SPERTZ</h1>
+    <div class="style-picker">
+      <label for="themeSelect">Style</label>
+      <select id="themeSelect">
+        <option value="default" selected>Default</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="dreamy">Dreamy</option>
+        <option value="futuristic">Futuristic</option>
+        <option value="simple">Simple</option>
+        <option value="sunlit">Sunlit</option>
+        <option value="linen">Linen</option>
+        <option value="handwritten">Handwritten</option>
+        <option value="adventure">Adventure</option>
+        <option value="star">Star</option>
+        <option value="pinky">Pinky</option>
+        <option value="icy">Icy</option>
+        <option value="classic">Classic</option>
+      </select>
+    </div>
+  </header>
+
+  <nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">
+      <span>Menu</span>
+      <span aria-hidden="true">☰</span>
+    </button>
+    <div class="nav-items" id="mainNav">
+    <div class="nav-item">
+      <a href="#phonetics" class="nav-link active">Phonetics</a>
+      <button class="nav-drop" type="button" aria-haspopup="true" aria-expanded="false">▾</button>
+      <div class="nav-menu" aria-label="Phonetics subsections">
+        <a href="#phonetics-vowels">Vowel Inventory and Spelling</a>
+        <a href="#phonetics-consonants">Consonant Inventory</a>
+        <a href="#phonetics-syllable">Syllable Structure</a>
+        <a href="#phonetics-rules">Phonological & Spelling Rules</a>
+        <a href="#phonetics-ipa">IPA Converter</a>
+        <a href="#phonetics-splitter">Syllable Splitter</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#grammar" class="nav-link">Grammar</a>
+      <button class="nav-drop" type="button" aria-haspopup="true" aria-expanded="false">▾</button>
+      <div class="nav-menu" aria-label="Grammar subsections">
+        <a href="#grammar-typology">Morphological Typology</a>
+        <a href="#grammar-inflection">Inflection Formation</a>
+        <a href="#grammar-parts">Parts of Speech</a>
+        <a href="#grammar-case">Case System</a>
+        <a href="#grammar-gender">Gender / Noun Classes</a>
+        <a href="#grammar-marking">Additional Marking on Nouns</a>
+        <a href="#grammar-person">Person/Number Inflection</a>
+        <a href="#grammar-tense">Tense (Inflectional Morphemes)</a>
+        <a href="#grammar-verb-lab">Verb Conjugation Lab</a>
+        <a href="#grammar-pronouns">Personal Pronouns</a>
+        <a href="#grammar-other-pronouns">Other Pronouns</a>
+        <a href="#grammar-numbers">Numbers (fiu)</a>
+        <a href="#grammar-adjectives">Adjectives</a>
+        <a href="#grammar-articles">Articles</a>
+        <a href="#grammar-word-order">Sentence Word Order</a>
+        <a href="#grammar-yesno">Yes–No Questions</a>
+        <a href="#grammar-conjunctions">Conjunctions</a>
+        <a href="#grammar-subclauses">Subclauses</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#quiz" class="nav-link">Quiz</a>
+      <button class="nav-drop" type="button" aria-haspopup="true" aria-expanded="false">▾</button>
+      <div class="nav-menu" aria-label="Quiz subsections">
+        <a href="#quiz">Language Quiz</a>
+        <a href="#quiz-animal">Animal Match Quiz</a>
+        <a href="#quiz-superpower">Superpower Day</a>
+        <a href="#personality">Personality Test</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#create" class="nav-link">Create</a>
+      <button class="nav-drop" type="button" aria-haspopup="true" aria-expanded="false">▾</button>
+      <div class="nav-menu" aria-label="Create subsections">
+        <a href="#create-archive">Name</a>
+        <a href="#create-birthday">Birthday</a>
+        <a href="#create-portrait">Portrait Maker</a>
+        <a href="#create-share">Share Your Character</a>
+        <a href="#create-cook">SPERTZ Cook</a>
+        <a href="#create-car">Car Innovation</a>
+        <a href="#create-quest">Kopahor Quest</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="#resources" class="nav-link">Extra Resources</a>
+      <button class="nav-drop" type="button" aria-haspopup="true" aria-expanded="false">▾</button>
+      <div class="nav-menu" aria-label="Resources subsections">
+        <a href="#resources-lexicon">Spertz Lexicon (Verbs)</a>
+        <a href="#resources-months">Why the Months Have Those Names</a>
+        <a href="#resources-bases">Why the West Counts in Base-8 and the South in Base-16</a>
+        <a href="#resources-spertz">Why the Language Is Called Spertz</a>
+        <a href="#resources-kopahor">A Small Story: The History of Kopahor</a>
+        <a href="#resources-faith">A Small Story: The Returning Gods</a>
+        <a href="#resources-powers">A Small Story: Superpowers Blend In</a>
+        <a href="#resources-league">A Small Story: The Spertz League</a>
+        <a href="#resources-life">A Small Story: Everyday Life in the Spertz League</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="content" id="phonetics">
+    <h2>Phonetics</h2>
+        <div class="phonetics-archive">
+
+      <div class="info-card vowel-card">
+        <h3 id="phonetics-vowels">Vowel Inventory and Spelling</h3>
+
+        <div class="subsection">
+          <h4>Monophthongs</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>i</td><td>[i]</td><td>“ee” as in <i>see</i></td></tr>
+                <tr><td>2</td><td>ei</td><td>[e]</td><td>“ay” as in <i>say</i></td></tr>
+                <tr><td>3</td><td>e</td><td>[ɛ]</td><td>“e” as in <i>bed</i></td></tr>
+                <tr><td>4</td><td>ae</td><td>[æ]</td><td>“a” as in <i>cat</i></td></tr>
+                <tr><td>5</td><td>u</td><td>[u]</td><td>“oo” as in <i>food</i></td></tr>
+                <tr><td>6</td><td>oe</td><td>[ʊ]</td><td>“oo” as in <i>foot</i></td></tr>
+                <tr><td>7</td><td>o</td><td>[o]</td><td>“o” as in <i>go</i></td></tr>
+                <tr><td>8</td><td>a</td><td>[ɑ]</td><td>“a” as in <i>father</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Diphthongs</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>9</td><td>ai</td><td>[ɑi]</td><td>“eye” glide</td></tr>
+                <tr><td>10</td><td>iu</td><td>[ju]</td><td>“yoo” as in <i>music</i></td></tr>
+                <tr><td>11</td><td>au</td><td>[ɑu]</td><td>“ow” as in <i>cow</i></td></tr>
+                <tr><td>12</td><td>ua</td><td>[wɑ]</td><td>“wa” as in <i>water</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Contrastive Length</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>13</td><td>yi</td><td>[iː]</td><td>Long “ee”</td></tr>
+                <tr><td>14</td><td>ye</td><td>[ɛː]</td><td>Long “e” as in <i>bed</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Mini Linguistics Lesson</h4>
+          <div class="rule-note">
+            <p style="margin:0 0 8px;">
+              A <b>monophthong</b> is a single, steady vowel sound. A <b>diphthong</b> is a vowel that glides from one vowel quality to another inside one syllable.
+            </p>
+            <p style="margin:0 0 8px;">
+              <b>Contrastive length</b> means vowel duration can change meaning, so short and long vowels are phonemically different.
+            </p>
+            <p style="margin:0;">
+              Word origin: <b>mono-</b> means “one” and <b>di-</b> means “two” in Greek. <b>phthong</b> comes from Greek <i>phthóngos</i>, meaning “sound” or “voice.”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card consonant-card">
+        <h3 id="phonetics-consonants">Consonant Inventory</h3>
+
+        <div class="subsection">
+          <h4>Stops</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>p</td><td>[p]</td><td>“p” as in <i>spin</i></td></tr>
+                <tr><td>2</td><td>b</td><td>[b]</td><td>“b” as in <i>bat</i></td></tr>
+                <tr><td>3</td><td>t</td><td>[t]</td><td>“t” as in <i>stop</i></td></tr>
+                <tr><td>4</td><td>d</td><td>[d]</td><td>“d” as in <i>dog</i></td></tr>
+                <tr><td>5</td><td>k</td><td>[k]</td><td>“k” as in <i>skin</i></td></tr>
+                <tr><td>6</td><td>g</td><td>[g]</td><td>“g” as in <i>go</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Affricate</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>7</td><td>ch</td><td>[ʧ]</td><td>“ch” as in <i>chat</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Fricatives</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>8</td><td>f</td><td>[f]</td><td>“f” as in <i>fan</i></td></tr>
+                <tr><td>9</td><td>v</td><td>[v]</td><td>“v” as in <i>van</i></td></tr>
+                <tr><td>10</td><td>s</td><td>[s]</td><td>“s” as in <i>see</i></td></tr>
+                <tr><td>11</td><td>z</td><td>[z]</td><td>“z” as in <i>zoo</i></td></tr>
+                <tr><td>12</td><td>sh</td><td>[ʃ]</td><td>“sh” as in <i>shoe</i></td></tr>
+                <tr><td>13</td><td>h</td><td>[h]</td><td>“h” as in <i>hat</i></td></tr>
+                <tr><td>14</td><td>x</td><td>[ks]</td><td>“x” as in <i>box</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Nasals</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>15</td><td>m</td><td>[m]</td><td>“m” as in <i>man</i></td></tr>
+                <tr><td>16</td><td>n</td><td>[n]</td><td>“n” as in <i>net</i></td></tr>
+                <tr><td>17</td><td>ng</td><td>[ŋ]</td><td>“ng” as in <i>sing</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Liquids</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>18</td><td>r</td><td>[ɹ]</td><td>English “r” as in <i>red</i></td></tr>
+                <tr><td>19</td><td>l</td><td>[l]</td><td>“l” as in <i>lip</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Glides</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>20</td><td>w</td><td>[w]</td><td>“w” as in <i>we</i></td></tr>
+                <tr><td>21</td><td>y</td><td>[j]</td><td>“y” as in <i>yes</i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Click</h4>
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Spelling</th>
+                  <th>IPA</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>22</td><td>||</td><td>[ǁ]</td><td>Alveolar lateral click</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Mini Linguistics Lesson</h4>
+          <div class="rule-note">
+            <p style="margin:0 0 8px;">
+              Consonants are commonly described by <b>manner of articulation</b> (how airflow is shaped) and <b>place of articulation</b> (where in the mouth or throat it happens).
+            </p>
+            <p style="margin:0 0 8px;">
+              <b>Manner:</b> Stops fully block then release air (p, t, k). Fricatives create turbulent friction (f, s, sh). Affricates combine a stop plus fricative release (ch). Nasals send air through the nose (m, n, ng). Liquids and glides are more open, vowel-like consonants (r, l, w, y).
+            </p>
+            <p style="margin:0 0 8px;">
+              <b>Place:</b> Bilabial at the lips (p, b, m). Labiodental with lip + teeth (f, v). Alveolar at the ridge behind the teeth (t, d, n, s, z, l). Postalveolar just behind that ridge (sh, ch). Velar at the soft palate (k, g, ng). Glottal at the vocal folds (h). The click symbol here is <b>alveolar lateral</b>, made with tongue contact near the alveolar region and side release.
+            </p>
+            <p style="margin:0;">
+              Note: <b>x</b> is written as [ks], so it functions as a consonant cluster in pronunciation rather than one simple consonant sound.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3 id="phonetics-syllable">Syllable Structure</h3>
+          <p class="mini-note">C = consonant, V = vowel</p>
+
+          <div class="syllable-grid">
+            <span class="pill">V</span>
+            <span class="pill">CV</span>
+            <span class="pill">VC</span>
+            <span class="pill">CCV</span>
+            <span class="pill">CVC</span>
+            <span class="pill">VCC</span>
+            <span class="pill">CCCV</span>
+            <span class="pill">CCVC</span>
+            <span class="pill">CVCC</span>
+            <span class="pill">VCCC</span>
+            <span class="pill">CCCVC</span>
+            <span class="pill">CCVCC</span>
+            <span class="pill">CVCCC</span>
+          </div>
+
+          <div class="rule-note" style="margin-top: 12px;">
+            <p style="margin:0;">
+              <b>Consonant order rules:</b>
+            </p>
+            <p style="margin: 8px 0 0;">
+              <b>Onset (before the vowel):</b> Stops → Affricates/Fricatives → Nasals → Liquids<br>
+              <b>Coda (after the vowel):</b> Liquids → Nasals → Affricates/Fricatives → Stops
+            </p>
+            <p style="margin: 8px 0 0;">
+              <b>No two consonants of the same class</b> may appear next to each other within a cluster.
+            </p>
+            <p style="margin: 8px 0 0;">
+              Consonant classes:
+              Stops (p b t d k g), Affricate (ch), Fricatives (f v s z sh h),
+              Nasals (m n ng), Liquids (r l).
+            </p>
+            <p style="margin: 8px 0 0;">
+              <b>Additional rule:</b> <b>ng</b> is not allowed in onset position; it can appear only in coda position.
+            </p>
+            <p style="margin: 8px 0 0;">
+              This order follows a common sonority-style shape. <b>Sonority</b> is how loud/open a speech sound is relative to others in a syllable. In onsets, sounds move from tighter constriction toward more open consonants as they approach the vowel; in codas, they move away from the vowel in reverse. This tends to be easier to pronounce, easier to hear, and more stable over time in natural languages.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 id="phonetics-rules">Phonological & Spelling Rules</h3>
+
+          <div class="accordion">
+
+            <button class="accordion-btn" type="button">
+              <span>Rule 1: [iV] sequencing</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                Sequences of <b>[iV]</b> are treated as <b>two separate syllables</b>,
+                except for <b>[iu]</b>, which is a diphthong and therefore <b>one syllable</b>.
+              </p>
+            </div>
+
+            <button class="accordion-btn" type="button">
+              <span>Rule 2: [ks] spelling</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                <b>[ks]</b> is represented by <b>&lt;x&gt;</b> when it’s at the <b>beginning</b>
+                of a word with a <b>positive/liking meaning</b>. Otherwise, <b>[ks]</b> is spelled
+                <b>&lt;ks&gt;</b>.
+              </p>
+            </div>
+
+            <button class="accordion-btn" type="button">
+              <span>Rule 3: &lt;c&gt; pronunciation</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                <b>&lt;c&gt;</b> before the vowel <b>[i]</b> is pronounced <b>[s]</b>.
+                Everywhere else, it is pronounced <b>[k]</b>.
+              </p>
+            </div>
+
+            <button class="accordion-btn" type="button">
+              <span>Rule 4: “y” behavior</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                When <b>y</b> appears as part of fixed vowel spellings (e.g., <b>yi</b>, <b>ye</b>),
+                it belongs to the vowel. Otherwise, <b>y</b> represents the glide <b>[j]</b>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 id="phonetics-ipa">IPA Converter (Try it)</h3>
+
+          <div class="rule-note" style="margin-bottom: 12px;">
+            <p style="margin:0;">
+              Stress is placed on the penultimate vowel in Spertz. Penultimate vowel means the vowel in the second-to-last syllable of a word. Many languages also favor penultimate stress, such as Polish (in most words), Swahili, and Quechua varieties.
+            </p>
+          </div>
+
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="ipaInput">Word (Spertz spelling)</label>
+              <input id="ipaInput" type="text" placeholder="e.g., krei" />
+            </div>
+
+            <div class="num-field">
+              <label for="ipaOutput">IPA output</label>
+              <div id="ipaOutput"
+                  style="padding: 12px 12px; border-radius: 12px; border: 1px solid var(--pill-border);
+                          background: var(--surface-2); color: var(--text); min-height: 20px;
+                          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+                —
+              </div>
+            </div>
+          </div>
+
+          <div class="rule-note" style="margin-top: 14px;">
+            <p style="margin:0;">
+              <b>Status:</b>
+              <span id="ipaStatus">Waiting for input…</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3 id="phonetics-splitter">Syllable Splitter</h3>
+
+          <p class="mini-note">
+            Type a Spertz word to split into syllables with dots.
+          </p>
+
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="splitInput">Word (Spertz spelling)</label>
+              <input id="splitInput" type="text" placeholder="e.g., krei" />
+            </div>
+
+            <div class="num-field">
+              <label for="splitOutput">Syllable split</label>
+              <div id="splitOutput"
+                  style="padding: 12px 12px; border-radius: 12px; border: 1px solid var(--pill-border);
+                          background: var(--surface-2); color: var(--text); min-height: 20px;
+                          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+                —
+              </div>
+            </div>
+          </div>
+
+          <div class="rule-note" style="margin-top: 14px;">
+            <p style="margin:0;">
+              <b>Status:</b>
+              <span id="splitStatus">Waiting for input…</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="content" id="grammar">
+    <h2>Grammar</h2>
+
+    <div class="grammar-archive">
+
+      <div class="grammar-card">
+        <h3 id="grammar-typology">Morphological Typology</h3>
+        <p>
+          Spertz is primarily agglutinative. Words are typically built from a root followed by a sequence of suffixes and/or prefixes, where each affix expresses one distinct grammatical function. Affix boundaries remain clear and segmentable, and grammatical information is generally added in a linear, step-by-step manner (root + affix1 + affix2 + affix3 …). Most morphemes carry a single meaning or role rather than combining multiple functions into one form.
+        </p>
+        <div class="rule-note" style="margin-top: 12px;">
+          <p style="margin:0 0 8px;">
+            <b>Agglutinative</b> means words are built by stacking clear affixes, and each affix usually has one job.
+          </p>
+          <p style="margin:0;">
+            Other common morphological types: <b>isolating</b> (very little affixation, grammar mostly by separate words), <b>fusional</b> (one affix can encode several meanings at once), and <b>polysynthetic</b> (many morphemes can combine into one very information-dense word).
+          </p>
+        </div>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-inflection">Inflection Formation</h3>
+        <p>
+          Inflection is formed primarily through suffixation, with grammatical information most commonly added at the end of a root. Prefixation is also used as a secondary strategy for certain categories, placing specific grammatical markers before the root. These affixes remain clearly segmentable and typically carry a single grammatical function each.
+        </p>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-parts">Parts of Speech (Nouns, Verbs, Adjectives)</h3>
+        <p>
+          Spertz has distinct and strictly separated lexical categories: nouns, verbs, and adjectives. Related words across different categories often share the same underlying root, but are differentiated by small category-specific suffixes. These suffix differences are not fully regular or predictable.
+        </p>
+
+        <div class="grammar-divider"></div>
+
+        <div class="grammar-highlight">
+          <p class="grammar-highlight-title">Category endings are constrained phonologically:</p>
+
+          <ul class="grammar-list">
+            <li><b>Verbs (with no conjugation)</b> must end in a vowel. No restrictions with conjugation.</li>
+            <li><b>Nouns</b> must end in a consonant.</li>
+            <li><b>Adjectives</b> must end in a vowel.</li>
+          </ul>
+
+          <div class="tag-grid">
+            <span class="tag-pill">Verbs → vowel</span>
+            <span class="tag-pill">Nouns → consonant</span>
+            <span class="tag-pill">Adjectives → vowel</span>
+          </div>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+        <div class="grammar-highlight">
+          <p class="grammar-highlight-title">Adjective agreement (final-letter matching):</p>
+
+          <p>
+            When an adjective modifies a noun, the adjective takes the final consonant letter of the noun (if genitive, disregard the e and use the last consonant letter of the noun). If the noun’s final letter is already the adjective’s second-to-last letter, then the adjective instead drops its final vowel rather than adding an extra letter.
+          </p>
+
+          <div class="example-box">
+            <p>
+              <b>Example:</b> noun XXXM, adjective XXMA → modifying form XXM (final vowel removed).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-case">Case System</h3>
+
+        <p>
+          Spertz uses a case system primarily marked by suffixes, but case marking is mostly a written-language disambiguation tool. In everyday speech, these affixes can be optionally omitted as long as the meaning remains clear.
+        </p>
+
+        <div class="table-wrap">
+          <table class="case-table">
+            <thead>
+              <tr>
+                  <th>Case</th>
+                  <th>Function</th>
+                  <th>Marking Strategy</th>
+                  <th>Marker</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td><b>Nominative</b></td>
+                  <td>Subject</td>
+                  <td>Unmarked (no additional morphology)</td>
+                  <td><span class="badge">∅ (none)</span></td>
+                </tr>
+
+                <tr>
+                  <td><b>Accusative</b></td>
+                  <td>Direct Object</td>
+                  <td>The direct object is marked on the verb as the second suffix (after subject agreement) in a verb.</td>
+                  <td><span class="badge"><code>-ta</code></span></td>
+                </tr>
+
+                <tr>
+                  <td><b>Genitive</b></td>
+                  <td>Possessive</td>
+                  <td>The genitive is formed by attaching a noun suffix:</td>
+                  <td><span class="badge"><code>-e</code> (pronounced [ɛ])</span></td>
+                </tr>
+
+                <tr>
+                  <td><b>Dative</b></td>
+                  <td>Indirect Object / Recipient</td>
+                  <td>
+                    The recipient (“to/for someone”) is expressed with a verbal prefix.
+                    It is written with a dash and treated as a separate syllable. The recipient must be stated immediately after the verb.
+                  </td>
+                  <td><span class="badge"><code>k-</code></span></td>
+                </tr>
+
+                <tr>
+                  <td><b>Ablative / Source</b></td>
+                  <td>“from where”</td>
+                  <td>
+                    Source/origin is expressed as a separate phrase after the verb, linked by a preposition (not agglutinated onto the verb).
+                  </td>
+                  <td><span class="badge">separate phrase</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="rule-note">
+            <p>
+              If both dative and source are present, the order is:
+            </p>
+            <p>
+              <b>Recipient first, Source second.</b><br>
+              If there is no dative, the source phrase comes first after the verb.
+            </p>
+          </div>
+      </div>
+
+      <div class="grammar-card">
+          <h3 id="grammar-gender">Gender / Noun Classes</h3>
+          <p>
+            Nouns in Spertz do not have grammatical gender or noun classes. However, third-person pronouns are distinguished by gender/class.
+          </p>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-marking">Additional Marking on Nouns</h3>
+
+        <p>
+          In addition to case, nouns may carry several other grammatical and pragmatic markers.
+        </p>
+
+        <div class="marker-grid">
+
+          <div class="marker-row">
+            <h4>Plurality</h4>
+            <p>
+              Plural nouns are formed by adding a dedicated suffix:
+              <span class="inline-code">-an</span>: the plural suffix.
+            </p>
+          </div>
+
+          <div class="marker-row">
+            <h4>Honorifics</h4>
+            <p>
+              Honorifics exist and are expressed as ranked titles added after a pronoun:
+            </p>
+
+            <div class="honorific-grid">
+              <span class="honorific-pill"><code>sa</code> polite / general respectful address</span>
+              <span class="honorific-pill"><code>fa</code> noble young master</span>
+              <span class="honorific-pill"><code>ra</code> noble young lady</span>
+              <span class="honorific-pill"><code>x</code> royal family member</span>
+            </div>
+          </div>
+
+          <div class="marker-row">
+            <h4>Topic marking</h4>
+            <p>
+              Topic is expressed by an independent word placed before the noun. It does not attach to the noun morphologically.
+            </p>
+
+            <div class="rule-note" style="margin-top: 12px;">
+              <p>
+                Topic marker: <span class="inline-code">zo</span> (pronounced [zo])
+              </p>
+            </div>
+          </div>
+
+          <div class="marker-row">
+            <h4>Possession</h4>
+            <p>
+              Possession is marked with the genitive noun suffix <span class="inline-code">-e</span> (pronounced [ɛ]).
+            </p>
+          </div>
+
+          <div class="marker-row">
+            <h4>Diminutive / Augmentative</h4>
+
+            <p>
+              Diminutive and augmentative meaning is expressed with noun-final suffixes:
+            </p>
+
+            <div class="tag-grid" style="margin-top: 10px;">
+              <span class="tag-pill">Diminutive: <span class="inline-code">-ias</span></span>
+              <span class="tag-pill">Augmentative: <span class="inline-code">-og</span></span>
+            </div>
+
+            <div class="rule-note">
+              <p>
+                When attached after a pronoun, if the preceding letter is a vowel, the forms become
+                <span class="inline-code">-lias</span> and <span class="inline-code">-rog</span> respectively (to avoid vowel collision).
+              </p>
+
+              <div class="example-box">
+                <p>
+                  <b>Example:</b> Sieralias = “she-pronoun + honorific + diminutive tone” addressing a noble young lady in a cute/affectionate way.
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      </div>
+      <div class="grammar-card">
+        <h3 id="grammar-person">Person/Number Inflection on Verbs</h3>
+
+        <p>
+          Verbs can inflect for person and number, but this system is used primarily in writing to reduce ambiguity. In everyday spoken usage, these agreement endings may be omitted if the meaning remains clear. Agreement is expressed through suffixes marking the subject.
+        </p>
+
+        <div class="subsection">
+          <h4>Present Tense Subject Agreement (Written)</h4>
+
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>Person/Number</th>
+                  <th>Suffix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1st person singular</td><td><span class="pill">-t</span></td></tr>
+                <tr><td>1st person plural</td><td><span class="pill">-wen</span></td></tr>
+                <tr><td>2nd person singular</td><td><span class="pill">-ya</span></td></tr>
+                <tr><td>2nd person plural</td><td><span class="pill">-yen</span></td></tr>
+                <tr><td>3rd person singular</td><td><span class="pill">-se</span></td></tr>
+                <tr><td>3rd person plural</td><td><span class="pill">-ten</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Direct Object Marking</h4>
+
+          <p class="mini-note">
+            In written verb morphology, a direct object marker -ta is always present when a direct object is present, regardless of whether the object is human or non-human. If the direct object is a person, an additional suffix is added after -ta:
+          </p>
+
+          <div class="syllable-grid">
+            <span class="pill">-sa for a human direct object</span>
+            <span class="pill">-x for a royal direct object</span>
+          </div>
+
+          <div class="rule-note">
+            <p>
+              <b>Overall structure:</b><br>
+              verb + subject suffix + ta + (sa/x if human)
+            </p>
+          </div>
+
+          <div class="example-box">
+            <p>
+              <b>Example (subject = “I”, verb = krei “to do/make”, direct object = a person):</b><br>
+              Wio kreittasa.<br>
+              (= krei + -t + -ta + -sa)
+            </p>
+            <p style="margin-top: 12px;">
+              <b>Royal direct object:</b><br>
+              Wio kreittax.<br>
+              (= krei + -t + -ta + -x)
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-tense">Tense (Inflectional Morphemes)</h3>
+
+        <p>
+          Verbs mark tense morphologically in writing.
+        </p>
+
+        <div class="subsection">
+          <h4>Tense</h4>
+
+          <div class="syllable-grid">
+            <span class="pill">Future tense: i- (prefix, written with a dash)</span>
+            <span class="pill">Past tense: -et (suffix, written without a dash)</span>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Aspect</h4>
+
+          <p class="mini-note">
+            Aspect is marked with dedicated suffixes. Spertz distinguishes four aspects:
+          </p>
+
+          <div class="syllable-grid">
+            <span class="pill">Progressive (ongoing): -ok</span>
+            <span class="pill">Perfect/Completed: -im</span>
+            <span class="pill">Habitual: -ul</span>
+            <span class="pill">Iterative/Repetitive: -en</span>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Mood</h4>
+
+          <p class="mini-note">
+            Mood is expressed by suffixes in writing:
+          </p>
+
+          <div class="syllable-grid">
+            <span class="pill">Declarative / Indicative: -or</span>
+            <span class="pill">Optative + Subjunctive: -el</span>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Negation</h4>
+
+          <p class="mini-note">
+            Negation is expressed with an independent negation word placed before the verb:
+          </p>
+
+          <div class="rule-note">
+            <p>
+              <b>Negation word:</b> mi
+            </p>
+          </div>
+
+      <div class="subsection">
+        <h4>Evidentiality</h4>
+
+        <p>
+          Evidentiality is encoded through the mood system:
+        </p>
+
+        <div class="syllable-grid">
+          <span class="pill">Direct/witnessed information: Declarative mood</span>
+          <span class="pill">Hearsay / inferred / guessed information: Subjunctive (optative-subjunctive) mood</span>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h4>Transitivity / Reflexive</h4>
+
+        <p>
+          Transitivity follows the existing direct object marking system.
+        </p>
+
+        <div class="rule-note">
+          <p>
+            Reflexive meaning is marked by changing the direct object marker:
+          </p>
+          <div class="syllable-grid" style="margin-top: 10px;">
+            <span class="pill">ta → te (reflexive)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h4>Static vs. Dynamic</h4>
+
+        <p>
+          Static is the default (unmarked).
+          Dynamic is marked by adding a final suffix:
+        </p>
+
+        <div class="syllable-grid">
+          <span class="pill">Dynamic: -og (added at the very end)</span>
+        </div>
+
+        <div class="rule-note">
+          <p>
+            -og is historically a single intensifying morpheme that extended into both nominal augmentative and verbal dynamic usage.
+          </p>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h4>Full Verb Suffix Order</h4>
+
+        <p>
+          The general order of verbal morphology is:
+        </p>
+
+        <div class="rule-note">
+          <div class="suffix-order">
+            <span class="suffix-step" data-step="1">Subject agreement</span>
+            <span class="suffix-step" data-step="2">Direct object marker (ta / te)</span>
+            <span class="suffix-step" data-step="3">If the direct object is human: sa / x</span>
+            <span class="suffix-step" data-step="4">Tense</span>
+            <span class="suffix-step" data-step="5">Aspect</span>
+            <span class="suffix-step" data-step="6">Mood</span>
+            <span class="suffix-step last" data-step="7">Dynamic marker (og)</span>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Optional Emotional Marking</h4>
+
+          <p class="mini-note">
+            In writing, any negative emotional coloring can optionally be marked by adding a final dash at the end of the verb form. This does not change pronunciation and is not mandatory.
+          </p>
+        </div>
+
+        <div class="example-box">
+          <p>
+            <b>Example:</b><br>
+            Wio i-kreittaenelog-<br>
+            Meaning: (With sad emotion) In the future, I might be making something (not clarified what, but not human) many times.
+          </p>
+
+          <div class="grammar-divider"></div>
+
+          <p>
+            krei = “to make”<br>
+            -t = 1st person singular subject agreement<br>
+            → kreit<br>
+            -ta = direct object marker<br>
+            → kreitta<br>
+            i- = future tense prefix (with dash)<br>
+            → i-kreittasa<br>
+            -en = iterative/repetitive aspect<br>
+            → i-kreittasaen<br>
+            -el = optative/subjunctive mood<br>
+            → i-kreittasaenel<br>
+            -og = dynamic marker<br>
+            → i-kreittasaenelog<br>
+            final dash “-” = optional negative emotion marker<br>
+            → i-kreittasaenelog-
+          </p>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-verb-lab">Verb Conjugation Lab (Try it)</h3>
+
+        <p class="mini-note">
+          Select a verb and morphological options. The system will generate the written verb form, IPA (stress = penultimate vowel), and a rough English gloss.
+        </p>
+
+        <div class="info-card" style="margin-top: 14px;">
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="verbSelect">Verb (Spertz)</label>
+              <select id="verbSelect"></select>
+            </div>
+
+            <div class="num-field">
+              <label for="verbMeaning">Meaning (English)</label>
+              <div id="verbMeaning"
+                  style="padding: 12px 12px; border-radius: 12px; border: 1px solid var(--pill-border);
+                          background: var(--surface-2); color: var(--text);">
+                —
+              </div>
+            </div>
+          </div>
+
+          <div class="grammar-divider"></div>
+
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="subjAgree">Subject agreement</label>
+              <select id="subjAgree">
+                <option value="omit" selected>(omit / unknown)</option>
+                <option value="1sg">1st person singular: -t</option>
+                <option value="1pl">1st person plural: -wen</option>
+                <option value="2sg">2nd person singular: -ya</option>
+                <option value="2pl">2nd person plural: -yen</option>
+                <option value="3sg">3rd person singular: -se</option>
+                <option value="3pl">3rd person plural: -ten</option>
+              </select>
+            </div>
+
+            <div class="num-field">
+              <label for="objMarker">Direct object marker</label>
+              <select id="objMarker">
+                <option value="none" selected>(none)</option>
+                <option value="ta">ta (direct object)</option>
+                <option value="te">te (reflexive)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="humanObj">If the direct object is human</label>
+              <select id="humanObj">
+                <option value="none" selected>(none)</option>
+                <option value="sa">sa (human direct object)</option>
+                <option value="x">x (royal direct object)</option>
+              </select>
+            </div>
+
+            <div class="num-field">
+              <label for="tenseSel">Tense</label>
+              <select id="tenseSel">
+                <option value="none" selected>(none)</option>
+                <option value="future">Future: i- (prefix)</option>
+                <option value="past">Past: -et (suffix)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="aspectSel">Aspect</label>
+              <select id="aspectSel">
+                <option value="none" selected>(none)</option>
+                <option value="ok">Progressive: -ok</option>
+                <option value="im">Perfect/Completed: -im</option>
+                <option value="ul">Habitual: -ul</option>
+                <option value="en">Iterative/Repetitive: -en</option>
+              </select>
+            </div>
+
+            <div class="num-field">
+              <label for="moodSel">Mood</label>
+              <select id="moodSel">
+                <option value="none" selected>(none)</option>
+                <option value="or">Declarative / Indicative: -or</option>
+                <option value="el">Optative + Subjunctive: -el</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="dynSel">Dynamic marker</label>
+              <select id="dynSel">
+                <option value="none" selected>(none)</option>
+                <option value="og">Dynamic: -og</option>
+              </select>
+            </div>
+
+            <div class="num-field">
+              <label for="previewOut">Generated form</label>
+              <div id="previewOut"
+                  style="padding: 12px 12px; border-radius: 12px; border: 1px solid var(--pill-border);
+                          background: var(--surface-2); color: var(--text); min-height: 20px;
+                          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+                —
+              </div>
+            </div>
+          </div>
+
+          <div class="rule-note" style="margin-top: 14px;">
+            <p style="margin:0;">
+              <b>IPA:</b>
+              <span id="ipaOutVerb"
+                    style="display:block; margin-top: 8px;
+                          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+                —
+              </span>
+            </p>
+          </div>
+
+          <div class="rule-note" style="margin-top: 12px;">
+            <p style="margin:0;">
+              <b>Rough English gloss:</b>
+              <span id="glossOut" style="display:block; margin-top: 8px;">
+                —
+              </span>
+            </p>
+          </div>
+
+          <div class="rule-note" style="margin-top: 12px;">
+            <p style="margin:0;">
+              <b>Status:</b> <span id="verbLabStatus">Ready.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-pronouns">Personal Pronouns</h3>
+
+        <p>
+          Personal pronouns distinguish person (1st/2nd/3rd) and number (singular/plural). Third-person pronouns additionally have multiple forms (used for gender/class distinctions), which can trigger written verb agreement.
+        </p>
+
+        <div class="subsection">
+          <h4>Pronoun Table</h4>
+
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>Person</th>
+                  <th>Singular</th>
+                  <th>Plural</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>1st person</b></td>
+                  <td>Wio</td>
+                  <td>Wol</td>
+                </tr>
+                <tr>
+                  <td><b>2nd person</b></td>
+                  <td>Nye</td>
+                  <td>Nyeya</td>
+                </tr>
+                <tr>
+                  <td><b>3rd person</b></td>
+                  <td>Sperte / Sie / Tatie</td>
+                  <td>Spiten / Tatien</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Notes</h4>
+
+          <div class="rule-note">
+            <p>
+              Nouns themselves do not carry grammatical gender/class, but third-person pronouns do, and these distinctions mainly matter in written verb agreement.
+            </p>
+          </div>
+
+          <div class="rule-note">
+            <p>
+              Honorific titles may be added after a pronoun (e.g., sa, fa, ra, x) depending on social rank.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Third-person pronoun classes (notes)</h4>
+
+          <p class="mini-note">
+            Third-person pronouns encode animacy and gender/class distinctions:
+          </p>
+
+          <div class="syllable-grid">
+            <span class="pill"><b>Sperte:</b> any living male referent (including animals)</span>
+            <span class="pill"><b>Sie:</b> any living female referent (including animals)</span>
+            <span class="pill"><b>Tatie:</b> living with no/unknown gender, or non-living referents</span>
+            <span class="pill"><b>Spite</b> (used later in discourse): non-binary people or referents with fluid/variable gender identity (e.g., androgynous or transitional)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-other-pronouns">Other Pronouns (Non-personal Pronouns)</h3>
+
+        <div class="subsection">
+          <h4>Interrogatives</h4>
+
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>Form</th>
+                  <th>Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><b>beyikaol</b></td><td>“why”</td></tr>
+                <tr><td><b>damir</b></td><td>“how long”</td></tr>
+                <tr><td><b>ekul</b></td><td>“which”</td></tr>
+                <tr><td><b>furol / yekar</b></td><td>“how”</td></tr>
+                <tr><td><b>kynar</b></td><td>“who”</td></tr>
+                <tr><td><b>luntek</b></td><td>“when”</td></tr>
+                <tr><td><b>orfek</b></td><td>“which kind / what type”</td></tr>
+                <tr><td><b>rinekas</b></td><td>“Is this possible?”</td></tr>
+                <tr><td><b>trinek</b></td><td>“how many / how much (amount)”</td></tr>
+                <tr><td><b>utrez</b></td><td>“or”</td></tr>
+                <tr><td><b>wasmen</b></td><td>“what”</td></tr>
+                <tr><td><b>zequk</b></td><td>“is it (…)? / is that so?”</td></tr>
+                <tr><td><b>zoreil</b></td><td>“where”</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Correlative System (this/that/some/no/every)</h4>
+
+          <p class="mini-note">
+            In addition to interrogatives, Spertz forms non-personal pronouns using a regular correlative pattern built on shared semantic roots:
+          </p>
+
+          <div class="rule-note">
+            <p><b>Prefixes</b></p>
+            <div class="syllable-grid" style="margin-top: 10px;">
+              <span class="pill">ti- = “this”</span>
+              <span class="pill">ta- = “that”</span>
+              <span class="pill">so- = “some-”</span>
+              <span class="pill">mi- = “no- / none”</span>
+              <span class="pill">ve- = “every- / all”</span>
+            </div>
+          </div>
+
+          <div class="rule-note">
+            <p><b>Roots</b></p>
+            <div class="syllable-grid" style="margin-top: 10px;">
+              <span class="pill">-nar = person</span>
+              <span class="pill">-men = thing</span>
+              <span class="pill">-reil = place</span>
+              <span class="pill">-tek = time</span>
+              <span class="pill">-rol = way/manner</span>
+              <span class="pill">-kaol = reason</span>
+              <span class="pill">-fek = kind/type</span>
+              <span class="pill">-nek = quantity/amount</span>
+              <span class="pill">-mir = duration/length of time</span>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h4>Forms</h4>
+
+            <div class="table-wrap">
+              <table class="archive-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>ti- (this)</th>
+                    <th>ta- (that)</th>
+                    <th>so- (some)</th>
+                    <th>mi- (no/none)</th>
+                    <th>ve- (every/all)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Person</b></td>
+                    <td>tinar (this person)</td>
+                    <td>tanar (that person)</td>
+                    <td>sonar (someone)</td>
+                    <td>minar (no one)</td>
+                    <td>venar (everyone)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Thing</b></td>
+                    <td>timen (this thing)</td>
+                    <td>tamen (that thing)</td>
+                    <td>somen (something)</td>
+                    <td>mimen (nothing)</td>
+                    <td>vemen (everything)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Place</b></td>
+                    <td>tireil (here/this place)</td>
+                    <td>tareil (there/that place)</td>
+                    <td>soreil (somewhere)</td>
+                    <td>mireil (nowhere)</td>
+                    <td>vereil (everywhere)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Time</b></td>
+                    <td>titek (now/this time)</td>
+                    <td>tatek (then/that time)</td>
+                    <td>sotek (sometime)</td>
+                    <td>mitek (never)</td>
+                    <td>vetek (always)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Way</b></td>
+                    <td>tirol (this way/thus)</td>
+                    <td>tarol (that way)</td>
+                    <td>sorol (somehow)</td>
+                    <td>mirol (no way)</td>
+                    <td>verol (every way)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Reason</b></td>
+                    <td>tikaol (this reason)</td>
+                    <td>takaol (that reason)</td>
+                    <td>sokaol (for some reason)</td>
+                    <td>mikaol (for no reason)</td>
+                    <td>vekaol (for every reason)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Kind/type</b></td>
+                    <td>tifek (this kind)</td>
+                    <td>tafek (that kind)</td>
+                    <td>sofek (some kind)</td>
+                    <td>mifek (no kind)</td>
+                    <td>vefek (every kind)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Quantity/amount</b></td>
+                    <td>tinek (this many/this much)</td>
+                    <td>tanek (that many/that much)</td>
+                    <td>sonek (some amount)</td>
+                    <td>minek (none)</td>
+                    <td>venek (every amount)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td>timir (this long)</td>
+                    <td>tamir (that long)</td>
+                    <td>somir (some length of time)</td>
+                    <td>mimir (no time at all)</td>
+                    <td>vemir (all the time)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="subsection">
+          <h4>Negation</h4>
+
+          <div class="rule-note">
+            <p>
+              Negation is expressed with the particle <b>mi</b>, placed before verbs or nouns. The mechanism is identical across categories (no separate negative pronoun forms are required).
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-numbers">Numbers</h3>
+
+        <div class="subsection">
+          <h4>Core digit roots</h4>
+          <p class="mini-note">
+            Spertz has basic digit roots for counting, and number words are formed by concatenation. Numbers do not take any nominal suffixes.
+          </p>
+
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>Digit</th>
+                  <th>Word</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>0</td><td><b>zu</b></td></tr>
+                <tr><td>1</td><td><b>ta</b></td></tr>
+                <tr><td>2</td><td><b>re</b></td></tr>
+                <tr><td>3</td><td><b>ki</b></td></tr>
+                <tr><td>4</td><td><b>vo</b></td></tr>
+                <tr><td>5</td><td><b>me</b></td></tr>
+                <tr><td>6</td><td><b>dal</b></td></tr>
+                <tr><td>7</td><td><b>zai</b></td></tr>
+                <tr><td>8</td><td><b>fiu</b></td></tr>
+                <tr><td>9</td><td><b>no</b></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Standard (International) System: Base-10</h4>
+
+          <p class="mini-note">
+            Base-10 is commonly used for international communication and standard writing.
+          </p>
+
+          <div class="rule-note">
+            <p><b>Formation examples:</b></p>
+            <p style="margin: 8px 0 0;">
+              10 = tazu (1+0)<br>
+              20 = retazu (2×(1+0))<br>
+              100 = rezu (10²)<br>
+              123 = tarezu-retazu-ki (100 + 20 + 3)<br>
+              3045 = kikizu-votazu-me (3000 + 40 + 5)
+            </p>
+            <p style="margin: 10px 0 0;">
+              Numbers are written as chained components, and hyphens may be used for clarity in long forms.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Western System: Base-8</h4>
+          <p class="mini-note">
+            In the western region, base-8 counting is common. In this system, the digits 8 (fiu) and 9 (no) are not used as independent digits.
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h4>Southern System: Base-16</h4>
+          <p class="mini-note">
+            In the southern region, base-16 counting is preferred. The southern digit sequence is:
+          </p>
+
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>Value</th>
+                  <th>Word</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>0</td><td><b>zu</b></td></tr>
+                <tr><td>1</td><td><b>ta</b></td></tr>
+                <tr><td>2</td><td><b>re</b></td></tr>
+                <tr><td>3</td><td><b>ki</b></td></tr>
+                <tr><td>4</td><td><b>vo</b></td></tr>
+                <tr><td>5</td><td><b>me</b></td></tr>
+                <tr><td>6</td><td><b>dal</b></td></tr>
+                <tr><td>7</td><td><b>zai</b></td></tr>
+                <tr><td>8</td><td><b>fiu</b></td></tr>
+                <tr><td>9</td><td><b>pita</b></td></tr>
+                <tr><td>10</td><td><b>pire</b></td></tr>
+                <tr><td>11</td><td><b>piki</b></td></tr>
+                <tr><td>12</td><td><b>pivo</b></td></tr>
+                <tr><td>13</td><td><b>pime</b></td></tr>
+                <tr><td>14</td><td><b>pidal</b></td></tr>
+                <tr><td>15</td><td><b>pizai</b></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="rule-note">
+            <p>
+              In this southern system, no is not used.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Quick Converter (Try it)</h4>
+
+          <div class="info-card">
+            <p class="mini-note" style="margin-bottom: 10px;">
+              Input an integer and choose a region system to convert it into Spertz number wording.
+            </p>
+
+            <div class="num-converter">
+              <div class="num-field">
+                <label for="numInput">Integer</label>
+                <input id="numInput" type="number" inputmode="numeric" placeholder="e.g., 123" min="0" max="2097152" />
+              </div>
+
+              <div class="num-field">
+                <label for="numRegion">Region / Base</label>
+                <select id="numRegion">
+                  <option value="10">Standard (International) • Base-10</option>
+                  <option value="8">Western • Base-8</option>
+                  <option value="16">Southern • Base-16</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="rule-note" style="margin-top: 14px;">
+              <p style="margin: 0;">
+                <b>Output:</b>
+                <span id="numOutput" style="display:block; margin-top:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+                  —
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grammar-card">
+        <h3 id="grammar-adjectives">Adjectives</h3>
+
+        <p>
+          Adjectives form an independent lexical class. They must end in a vowel, and when modifying a noun they follow the noun. Adjectival modification follows the previously defined noun-final matching rule used for adjective agreement.
+        </p>
+
+        <div class="subsection">
+          <h4>Order</h4>
+
+          <div class="rule-note">
+            <p><b>Basic attributive order is:</b></p>
+            <div class="syllable-grid" style="margin-top: 10px;">
+              <span class="pill">Noun + Adjective</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>Comparatives and Equatives</h4>
+
+          <p class="mini-note">
+            Comparative meaning is expressed with independent words, not affixes.
+          </p>
+
+          <div class="table-wrap">
+            <table class="archive-table">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Structure</th>
+                  <th>Marker</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>Comparative (“more …”)</b></td>
+                  <td>Noun + Adjective + mora</td>
+                  <td>mora = “more”</td>
+                </tr>
+
+                <tr>
+                  <td><b>Superlative (“most …”)</b></td>
+                  <td>Noun + Adjective + mesta</td>
+                  <td>mesta = “most”</td>
+                </tr>
+
+                <tr>
+                  <td><b>Comparative (“less …”)</b></td>
+                  <td>Noun + Adjective + lora</td>
+                  <td>lora = “less”</td>
+                </tr>
+
+                <tr>
+                  <td><b>Superlative (“least …”)</b></td>
+                  <td>Noun + Adjective + lesta</td>
+                  <td>lesta = “least”</td>
+                </tr>
+
+                <tr>
+                  <td><b>Equative (“as … as …”)</b></td>
+                  <td>sama + Noun1 + Adjective1 + sama + Noun2 + Adjective2</td>
+                  <td>sama = “as … as”</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="rule-note">
+            <p><b>Equative comparison is expressed with the marker sama, appearing on both sides of the comparison:</b></p>
+            <div class="syllable-grid" style="margin-top: 10px;">
+              <span class="pill">sama</span>
+              <span class="pill">Noun1</span>
+              <span class="pill">Adjective1</span>
+              <span class="pill">sama</span>
+              <span class="pill">Noun2</span>
+              <span class="pill">Adjective2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grammar-card">
+  <h3 id="grammar-articles">Articles</h3>
+
+  <p>
+    Spertz has both definite and indefinite articles.
+  </p>
+
+  <div class="subsection">
+    <h4>Definite vs. Indefinite</h4>
+
+    <div class="rule-note">
+      <p>
+        Definite reference is expressed using the demonstratives “this” and “that”, which function as definite articles when placed with a noun (equivalent to English “the (this/that) one”).
+      </p>
+    </div>
+
+    <div class="rule-note">
+      <p>
+        Indefinite reference is marked with the article “tas”, derived historically from the numeral ta “one”. “tas” functions like English “a/an” and introduces a non-specific or newly mentioned referent.
+      </p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h4>Noun Phrase Order</h4>
+
+    <p class="mini-note">
+      Default noun phrase structure:
+    </p>
+
+    <div class="rule-note">
+      <div class="syllable-grid">
+        <span class="pill">(Topic)</span>
+        <span class="pill">+</span>
+        <span class="pill">(Article)</span>
+        <span class="pill">+</span>
+        <span class="pill">(Number)</span>
+        <span class="pill">+</span>
+        <span class="pill">Noun</span>
+        <span class="pill">+</span>
+        <span class="pill">Adjective</span>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="archive-table">
+        <thead>
+          <tr>
+            <th>Slot</th>
+            <th>Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Topic</b></td>
+            <td>Topic marker zo (optional) appears first.</td>
+          </tr>
+          <tr>
+            <td><b>Article</b></td>
+            <td>Articles include tas (indefinite) and the demonstratives this/that (definite).</td>
+          </tr>
+          <tr>
+            <td><b>Number</b></td>
+            <td>Numbers precede the noun.</td>
+          </tr>
+          <tr>
+            <td><b>Adjective</b></td>
+            <td>Adjectives normally follow the noun and agree using the established noun-final matching rule.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h4>Possession (Genitive)</h4>
+
+    <p class="mini-note">
+      Possession is marked with the genitive suffix -e (pronounced [ɛ]).
+    </p>
+
+    <div class="rule-note">
+      <p>
+        In possessive noun phrases, the possessor (owner) appears first and takes -e, and the possessed noun follows immediately after.
+      </p>
+    </div>
+
+    <div class="rule-note">
+      <p><b>Structure:</b></p>
+      <div class="syllable-grid" style="margin-top: 10px;">
+        <span class="pill">(Topic)</span>
+        <span class="pill">+</span>
+        <span class="pill">(Article)</span>
+        <span class="pill">+</span>
+        <span class="pill">(Number)</span>
+        <span class="pill">+</span>
+        <span class="pill">Possessor-e</span>
+        <span class="pill">+</span>
+        <span class="pill">Possessed Noun</span>
+        <span class="pill">+</span>
+        <span class="pill">(Adjective for the possessed noun)</span>
+      </div>
+    </div>
+
+    <div class="rule-note">
+      <p>
+        Important: the adjective placed after the possessed noun describes the possessed noun, not the possessor.
+      </p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h4>Adjectives Modifying the Possessor</h4>
+
+    <p class="mini-note">
+      If an adjective is intended to describe the possessor (the noun marked with -e), the adjective is placed before the possessor, and a written linker n is inserted to mark the scope. The linker n is silent (not pronounced) and exists purely to avoid ambiguity in writing.
+    </p>
+
+    <div class="rule-note">
+      <p><b>Structure:</b></p>
+      <div class="syllable-grid" style="margin-top: 10px;">
+        <span class="pill">Adjective</span>
+        <span class="pill">+</span>
+        <span class="pill">n</span>
+        <span class="pill">+</span>
+        <span class="pill">Possessor-e</span>
+        <span class="pill">+</span>
+        <span class="pill">Possessed Noun</span>
+        <span class="pill">+</span>
+        <span class="pill">(Adjective for the possessed noun)</span>
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="grammar-card">
+      <h3 id="grammar-word-order">Sentence Word Order</h3>
+
+      <p>
+        The default word order in declarative clauses is SVO (Subject–Verb–Object).
+      </p>
+
+      <div class="rule-note">
+        <p>
+          For imperatives (commands), Spertz uses SOV order as a grammatical strategy to mark directive force.
+        </p>
+      </div>
+
+      <div class="rule-note">
+        <p>
+          A topicalized element may optionally be introduced using the topic marker zo, placed at the beginning of the clause.
+        </p>
+      </div>
+
+      <div class="syllable-grid">
+        <span class="pill">Declarative: SVO</span>
+        <span class="pill">Imperative: SOV</span>
+        <span class="pill">Topic marker: zo (clause-initial)</span>
+      </div>
+    </div>
+
+    <div class="grammar-card">
+  <h3 id="grammar-yesno">Yes–No Questions</h3>
+
+  <p>
+    Yes–no questions are formed by placing a question marker/word (zequk, or ze) at the beginning of the sentence and using rising intonation. The internal word order does not change.
+  </p>
+
+  <div class="subsection">
+    <h4>Missing Information Deletion</h4>
+
+    <p class="mini-note">
+      When information is unknown, Spertz allows deletion of the missing element rather than inserting a dummy form. In general: remove whatever information is not known (“missing information deletion”).
+    </p>
+
+    <div class="rule-note">
+      <p>
+        Information Deletion in Questions
+      </p>
+      <p style="margin: 10px 0 0;">
+        If the subject is unknown, subject agreement marking may be omitted, since the pronoun/person is not specified. If other components are unknown, they are similarly omitted from the clause.
+      </p>
+    </div>
+
+    <div class="example-box">
+      <p>
+        <b>Example (statement):</b><br>
+        Wio i-kreit. = “I will make/do (it).”
+      </p>
+
+      <p style="margin-top: 12px;">
+        <b>Example (question with unknown subject):</b><br>
+        Kynar i-krei? = “Who will make/do (it)?”<br>
+        (Subject agreement is omitted because the subject pronoun is unknown.)
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <div class="grammar-card">
+    <h3 id="grammar-conjunctions">Conjunctions</h3>
+
+    <p>
+      Spertz uses independent conjunction words to link words, phrases, and clauses.
+    </p>
+
+    <div class="table-wrap">
+      <table class="archive-table">
+        <thead>
+          <tr>
+            <th>Form</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><b>pa</b></td><td>“and”</td></tr>
+          <tr><td><b>utrez</b></td><td>“or” (exclusive only: X or Y, but not both)</td></tr>
+          <tr><td><b>zai</b></td><td>“but”</td></tr>
+          <tr><td><b>lunte</b></td><td>“then / and then”</td></tr>
+          <tr><td><b>bey</b></td><td>“because”</td></tr>
+          <tr><td><b>eki</b></td><td>“if”</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subsection">
+      <h4>Note on “or”</h4>
+
+      <div class="rule-note">
+        <p>
+          The conjunction utrez is exclusive by default (“X or Y, but not both”). To allow the inclusive reading (“X or Y, or both”), Spertz uses “X utrez Y utrez ve”.
+        </p>
+        <p style="margin: 10px 0 0;">
+          ve = “both / also included”
+        </p>
+      </div>
+
+      <div class="rule-note">
+        <div class="syllable-grid">
+          <span class="pill">X utrez Y utrez ve</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grammar-card">
+    <h3 id="grammar-subclauses">Subclauses</h3>
+
+    <p>
+      Subclauses are introduced by an explicit subordinator (linking word). Clause-internal word order remains SVO, just like main clauses.
+    </p>
+
+    <div class="rule-note">
+      <p>
+        In formal writing, subclauses are additionally enclosed with the silent boundary markers | ... | to clearly mark the start and end of the embedded clause. These bars are not pronounced; in speech, clause boundaries are inferred from context and intonation.
+      </p>
+    </div>
+
+    <div class="subsection">
+      <h4>Basic structure</h4>
+
+      <div class="rule-note">
+        <p><b>Main clause + subordinator + | subclause content | + remaining material</b></p>
+      </div>
+
+      <div class="syllable-grid">
+        <span class="pill">Main clause</span>
+        <span class="pill">+</span>
+        <span class="pill">subordinator</span>
+        <span class="pill">+</span>
+        <span class="pill">| subclause content |</span>
+        <span class="pill">+</span>
+        <span class="pill">remaining material</span>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h4>Nested subclauses</h4>
+
+      <p class="mini-note">
+        Nested embedding uses the same system recursively:
+      </p>
+
+      <div class="rule-note">
+        <p>
+          Main clause + subordinator + | subclause1-part1 + subordinator + | subclause2 | + subclause1-part2 | + remaining material
+        </p>
+      </div>
+
+      <div class="rule-note">
+        <p>
+          The boundary markers exist purely for written disambiguation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+  <div class="content" id="quiz">
+    <h2>Quiz</h2>
+    <div class="phonetics-archive">
+      <div class="info-card">
+        <h3>Random Spertz Quiz</h3>
+        <p class="mini-note">
+          Choose how many questions you want (1–10).
+        </p>
+
+        <div class="quiz-controls">
+          <div class="num-converter">
+            <div class="num-field">
+              <label for="quizCount">Number of questions</label>
+              <select id="quizCount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="quiz-actions">
+            <button id="quizGenerate" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Generate Quiz</span>
+              <span class="acc-icon">⟳</span>
+            </button>
+
+            <button id="quizSubmit" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Submit Answers</span>
+              <span class="acc-icon">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+        <div id="quizArea" class="phonetics-archive"></div>
+        <div id="quizScore" class="rule-note" style="margin-top: 12px; display:none;"></div>
+      </div>
+
+      <div class="info-card" id="quiz-animal">
+        <h3>Which Spertz Animal Matches You?</h3>
+        <p class="mini-note">
+          Answer the questions below and discover your closest animal match.
+          You can optionally paste your share code to include your name and portrait on the result card.
+        </p>
+
+        <div class="num-converter" style="margin-top: 10px;">
+          <div class="num-field" style="grid-column: 1 / -1;">
+            <label for="animalShareCode">Optional share code (for name + portrait)</label>
+            <textarea id="animalShareCode" class="share-code" placeholder="SPERTZ1:..."></textarea>
+          </div>
+          <div class="num-field" style="grid-column: 1 / -1;">
+            <label for="animalPortraitMode">Portrait on result card</label>
+            <select id="animalPortraitMode">
+              <option value="traditional">Traditional (Pixel)</option>
+              <option value="illustrated">Illustrated (Drawn)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="animal-actions">
+          <button id="animalShareApply" class="accordion-btn" type="button" style="max-width: 240px;">
+            <span>Use Share Code</span>
+            <span class="acc-icon">✓</span>
+          </button>
+          <button id="animalShareClear" class="accordion-btn" type="button" style="max-width: 240px;">
+            <span>Clear Share Code</span>
+            <span class="acc-icon">⟳</span>
+          </button>
+          <div class="rule-note" style="margin:0; flex:1 1 220px;">
+            <p style="margin:0;"><b>Status:</b> <span id="animalShareStatus">No code loaded.</span></p>
+          </div>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+        <div id="animalQuizQuestions" class="personality-wrap"></div>
+
+        <div class="animal-actions">
+          <button id="animalQuizSubmit" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>See Results</span>
+            <span class="acc-icon">✓</span>
+          </button>
+          <button id="animalQuizReset" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>Reset</span>
+            <span class="acc-icon">⟳</span>
+          </button>
+          <button id="animalGuideToggle" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>Animal Guidebook</span>
+            <span class="acc-icon">▾</span>
+          </button>
+        </div>
+
+        <div id="animalGuide" class="rule-note" style="margin-top: 12px; display:none;"></div>
+
+        <div id="animalQuizResults" class="rule-note" style="margin-top: 12px; display:none;"></div>
+      </div>
+
+      <div class="info-card" id="quiz-superpower">
+        <h3>Superpower Day: Find Your Rings</h3>
+        <p class="mini-note">
+          On December 26 each year in Pesimura, new adults awaken ring powers. Answer the questions to reveal your rings,
+          their properties, and their rank.
+        </p>
+
+        <div id="superpowerQuestions" class="personality-wrap"></div>
+
+        <div class="animal-actions">
+          <button id="superpowerSubmit" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>See Results</span>
+            <span class="acc-icon">✓</span>
+          </button>
+          <button id="superpowerReset" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>Reset</span>
+            <span class="acc-icon">⟳</span>
+          </button>
+        </div>
+
+        <div id="superpowerResults" class="rule-note" style="margin-top: 12px; display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="personality">
+    <h2>SPERTZ Personality Test</h2>
+    <p class="mini-note">
+      Answer honestly — there are no right or wrong answers.
+    </p>
+
+    <div class="personality-wrap">
+      <div class="personality-card">
+        <h3 style="margin:0;">Intro</h3>
+        <p class="mini-note" style="margin-top:8px;">
+          Each statement uses a 7-point scale from <b>Strongly Disagree</b> to <b>Strongly Agree</b>.
+        </p>
+      </div>
+
+      <div id="personalityQuestions" class="personality-wrap"></div>
+
+      <div class="personality-actions" style="display:flex; gap:10px; flex-wrap:wrap;">
+        <button id="personalitySubmit" class="accordion-btn" type="button" style="max-width: 220px;">
+          <span>See Results</span>
+          <span class="acc-icon">✓</span>
+        </button>
+        <button id="personalityReset" class="accordion-btn" type="button" style="max-width: 220px;">
+          <span>Reset</span>
+          <span class="acc-icon">⟳</span>
+        </button>
+      </div>
+
+      <div id="personalityResults" class="rule-note" style="margin-top: 12px; display:none;"></div>
+    </div>
+  </div>
+
+  <div class="content" id="create">
+    <h2>Create</h2>
+
+    <div class="phonetics-archive">
+      <div class="info-card">
+        <h3 id="create-archive">Name</h3>
+
+        <p class="mini-note">
+          Choose your name structure. First and last names are required (1–5 syllables each). Middle name is optional.
+          If you type a custom middle name, it must follow Spertz spelling rules and allowed syllable patterns.
+        </p>
+
+        <div class="num-converter">
+  <div class="num-field">
+    <label for="firstMode">First name</label>
+    <select id="firstMode">
+      <option value="random" selected>Random</option>
+      <option value="custom">Custom input</option>
+    </select>
+  </div>
+
+  <div class="num-field" id="firstSylWrap">
+    <label for="firstSyl">First syllables (1–5)</label>
+    <select id="firstSyl">
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+</div>
+
+<div id="customFirstWrap" style="margin-top: 14px; display:none;">
+  <div class="num-field">
+    <label for="customFirst">Custom first name (CV/CVC/CCV/VCC allowed)</label>
+    <input id="customFirst" type="text" placeholder="e.g., krei / sorol / tareil" />
+  </div>
+</div>
+
+<div class="num-converter" style="margin-top: 14px;">
+  <div class="num-field">
+    <label for="lastMode">Last name</label>
+    <select id="lastMode">
+      <option value="random" selected>Random</option>
+      <option value="custom">Custom input</option>
+    </select>
+  </div>
+
+  <div class="num-field" id="lastSylWrap">
+    <label for="lastSyl">Last syllables (1–5)</label>
+    <select id="lastSyl">
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+</div>
+
+<div id="customLastWrap" style="margin-top: 14px; display:none;">
+  <div class="num-field">
+    <label for="customLast">Custom last name (CV/CVC/CCV/VCC allowed)</label>
+    <input id="customLast" type="text" placeholder="e.g., navine / darezu / liguria" />
+  </div>
+</div>
+
+        <div class="grammar-divider"></div>
+
+        <div class="num-converter">
+          <div class="num-field">
+            <label for="middleMode">Middle name</label>
+            <select id="middleMode">
+              <option value="none" selected>None</option>
+              <option value="random">Random</option>
+              <option value="custom">Custom input</option>
+            </select>
+          </div>
+
+          <div class="num-field" id="middleSylWrap" style="display:none;">
+            <label for="middleSyl">Middle syllables (1–5)</label>
+            <select id="middleSyl">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="customMiddleWrap" style="margin-top: 14px; display:none;">
+          <div class="num-field">
+            <label for="customMiddle">Custom middle name (must be valid Spertz spelling)</label>
+            <input id="customMiddle" type="text" placeholder="e.g., tareil / soreil / tinar" />
+          </div>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+        <div class="num-converter">
+          <div class="num-field">
+            <label for="nameStyle">Name style</label>
+            <select id="nameStyle">
+              <option value="none" selected>None (fully random)</option>
+              <option value="international">International / Middle (easy)</option>
+              <option value="north">North</option>
+              <option value="east">East</option>
+              <option value="west">West</option>
+              <option value="south">South</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+        <div class="num-converter">
+          <div class="num-field">
+            <label for="genderSelect">Gender / Class choice</label>
+            <select id="genderSelect">
+              <option value="male" selected>Male</option>
+              <option value="female">Female</option>
+              <option value="nb">Non-binary / fluid</option>
+              <option value="unknown">Unknown / non-living</option>
+            </select>
+          </div>
+
+          <div class="num-field">
+            <label for="pronounOut">Assigned pronoun</label>
+            <div id="pronounOut"
+                style="padding: 12px 12px; border-radius: 12px; border: 1px solid var(--pill-border);
+                        background: var(--surface-2); color: var(--text);">
+              —
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 14px; display:flex; gap: 10px; flex-wrap: wrap;">
+          <button id="regenNameBtn" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>Generate Name</span>
+            <span class="acc-icon">⟳</span>
+          </button>
+
+          <button id="copyNameBtn" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>Copy Result</span>
+            <span class="acc-icon">⧉</span>
+          </button>
+        </div>
+
+        <div class="rule-note" style="margin-top: 14px;">
+          <p style="margin:0;">
+            <b>Your name:</b>
+            <span id="fullNameOut" style="display:block; margin-top: 8px; font-size: 1.1em; color:var(--heading);">
+              —
+            </span>
+          </p>
+        </div>
+
+        <div class="rule-note" style="margin-top: 12px;">
+          <p style="margin:0;">
+            <b>IPA:</b>
+            <span id="nameIpaOut"
+                  style="display:block; margin-top: 8px;
+                        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+              —
+            </span>
+          </p>
+        </div>
+
+        <div class="rule-note" style="margin-top: 12px;">
+          <p style="margin:0;">
+            <b>Status:</b> <span id="nameStatusOut">Ready.</span>
+          </p>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+<h3 id="create-birthday" style="margin-top: 8px;">Birthday</h3>
+<p class="mini-note">
+  Enter a date or generate one randomly. Year must be 1920–2099.
+</p>
+
+<div class="num-converter">
+  <div class="num-field">
+    <label for="birthYear">Year (1920–2099)</label>
+    <input id="birthYear" type="number" min="1920" max="2099" placeholder="e.g., 2001" />
+  </div>
+
+  <div class="num-field">
+    <label for="birthMonth">Month</label>
+    <select id="birthMonth"></select>
+  </div>
+</div>
+
+<div class="num-converter">
+  <div class="num-field">
+    <label for="birthDay">Day</label>
+    <input id="birthDay" type="number" min="1" max="31" placeholder="e.g., 12" />
+  </div>
+
+  <div class="num-field">
+    <label>Actions</label>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button id="randomBirthBtn" class="accordion-btn" type="button" style="max-width: 240px;">
+        <span>Random Birthday</span>
+        <span class="acc-icon">⟳</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="rule-note" style="margin-top: 12px;">
+  <p style="margin:0;">
+    <b>Your birthday (Spertz):</b>
+    <span id="birthSpertzOut"
+          style="display:block; margin-top:8px; font-size: 1.1em; color:var(--heading);
+                 font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+      —
+    </span>
+  </p>
+</div>
+
+<div class="rule-note" style="margin-top: 12px;">
+  <p style="margin:0;">
+    <b>IPA:</b>
+    <span id="birthIpaOut"
+          style="display:block; margin-top:8px;
+                 font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+      —
+    </span>
+  </p>
+</div>
+
+<div class="rule-note" style="margin-top: 12px;">
+  <p style="margin:0;">
+    <b>English display:</b>
+    <span id="birthEngOut" style="display:block; margin-top:8px;">
+      —
+    </span>
+  </p>
+</div>
+
+<div class="rule-note" style="margin-top: 12px;">
+  <p style="margin:0;">
+    <b>Status:</b> <span id="birthStatusOut">Ready.</span>
+  </p>
+</div>
+
+        <div class="grammar-divider"></div>
+
+        <h3 id="create-portrait" style="margin-top: 8px;">Portrait Maker</h3>
+        <p class="mini-note">
+          Build a stylized portrait.
+        </p>
+
+        <div class="portrait-wrap">
+          <div class="portrait-tabs">
+            <button class="portrait-tab" type="button" data-portrait-view="pixel">Traditional (Pixel)</button>
+            <button class="portrait-tab active" type="button" data-portrait-view="illustrated">Illustrated (Drawn)</button>
+          </div>
+
+          <div class="portrait-stage">
+            <div id="portraitViewPixel" class="portrait-view">
+              <canvas id="portraitCanvas" class="portrait-canvas" width="128" height="128"></canvas>
+            </div>
+            <div id="portraitViewIllustrated" class="portrait-view active">
+              <div id="illustratedPortrait" class="portrait-illustrated" aria-label="Illustrated portrait preview">
+                <img id="drawBackHair" alt="Back hair layer" />
+                <img id="drawBody" alt="Body layer" />
+                <img id="drawNose" alt="Nose layer" />
+                <img id="drawEyes" alt="Eyes layer" />
+                <canvas id="drawEyeTint" aria-hidden="true"></canvas>
+                <img id="drawWink" alt="Wink layer" />
+                <img id="drawClosed" alt="Closed eyes layer" />
+                <img id="drawPupil" alt="Pupil layer" />
+                <img id="drawBrows" alt="Eyebrows layer" />
+                <img id="drawMouth" alt="Mouth layer" />
+                <img id="drawFrontHair" alt="Front hair layer" />
+                <img id="drawTemples" alt="Temples layer" />
+                <img id="drawBraids" alt="Braids layer" />
+                <img id="drawOutfit" alt="Outfit layer" />
+                <img id="drawAccessory" alt="Accessory layer" />
+              </div>
+            </div>
+          </div>
+
+          <h4 style="margin:0; color:var(--accent-2); font-weight:500; letter-spacing:0.3px;">Skin & Shape</h4>
+          <div class="portrait-grid">
+            <div class="num-field">
+              <label for="skinColor">Skin color</label>
+              <select id="skinColor"></select>
+            </div>
+            <div class="num-field">
+              <label for="eyeShape">Eye shape</label>
+              <select id="eyeShape"></select>
+            </div>
+            <div class="num-field">
+              <label for="eyeWinkSide">Wink side</label>
+              <select id="eyeWinkSide"></select>
+            </div>
+            <div class="num-field">
+              <label for="eyeClosedSide">Closed side</label>
+              <select id="eyeClosedSide"></select>
+            </div>
+            <div class="num-field">
+              <label for="eyeWinkSecond">Other eye shape</label>
+              <select id="eyeWinkSecond"></select>
+            </div>
+            <div class="num-field">
+              <label for="noseShape">Nose shape</label>
+              <select id="noseShape"></select>
+            </div>
+            <div class="num-field">
+              <label for="mouthShape">Mouth shape</label>
+              <select id="mouthShape"></select>
+            </div>
+            <div class="num-field">
+              <label for="mouthSize">Mouth size</label>
+              <select id="mouthSize"></select>
+            </div>
+            <div class="num-field">
+              <label for="browShape">Eyebrows</label>
+              <select id="browShape"></select>
+            </div>
+            <div class="num-field">
+              <label for="genderStyle">Gender vibe</label>
+              <select id="genderStyle"></select>
+            </div>
+          </div>
+
+          <h4 style="margin:0; color:var(--accent-2); font-weight:500; letter-spacing:0.3px;">Hair</h4>
+          <div class="portrait-grid">
+            <div class="num-field">
+              <label for="hairColor">Hair color</label>
+              <select id="hairColor"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairHighlight">Hair highlight</label>
+              <select id="hairHighlight"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairFront">Bangs</label>
+              <select id="hairFront"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairFrontSide">Bangs side</label>
+              <select id="hairFrontSide"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairTemples">Temples</label>
+              <select id="hairTemples"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairBack">Back hair</label>
+              <select id="hairBack"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairBackLength">Back hair length</label>
+              <select id="hairBackLength"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairBackOther">Back hair (other style)</label>
+              <select id="hairBackOther"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairBraids">Braids</label>
+              <select id="hairBraids"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairSingleBraidPos">Single braid position</label>
+              <select id="hairSingleBraidPos"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairSingleBraidLen">Ponytail length</label>
+              <select id="hairSingleBraidLen"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairDoubleBraidStyle">Double braids style</label>
+              <select id="hairDoubleBraidStyle"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairDoubleBraidSide">Double braids side</label>
+              <select id="hairDoubleBraidSide"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairDoubleBraidLen">Twin ponytails length</label>
+              <select id="hairDoubleBraidLen"></select>
+            </div>
+            <div class="num-field">
+              <label for="hairLowTwinLen">Low twin ponytails length</label>
+              <select id="hairLowTwinLen"></select>
+            </div>
+          </div>
+
+          <h4 style="margin:0; color:var(--accent-2); font-weight:500; letter-spacing:0.3px;">Eyes</h4>
+          <div class="portrait-grid">
+            <div class="num-field">
+              <label for="leftEyeColor">Eye color (base)</label>
+              <select id="leftEyeColor"></select>
+            </div>
+            <div class="num-field" style="display:flex; align-items:flex-end; gap:10px;">
+              <label style="display:flex; align-items:center; gap:8px; margin:0;">
+                <input id="eyeSpecialToggle" type="checkbox" />
+                Special eyes (left/right + top/bottom)
+              </label>
+            </div>
+            <div class="num-field">
+              <label for="rightEyeColor">Right eye color</label>
+              <select id="rightEyeColor"></select>
+            </div>
+            <div class="num-field">
+              <label for="leftEyeTop">Left eye top</label>
+              <select id="leftEyeTop"></select>
+            </div>
+            <div class="num-field">
+              <label for="leftEyeBottom">Left eye bottom</label>
+              <select id="leftEyeBottom"></select>
+            </div>
+            <div class="num-field">
+              <label for="rightEyeTop">Right eye top</label>
+              <select id="rightEyeTop"></select>
+            </div>
+            <div class="num-field">
+              <label for="rightEyeBottom">Right eye bottom</label>
+              <select id="rightEyeBottom"></select>
+            </div>
+            <div class="num-field" style="display:flex; align-items:flex-end; gap:10px;">
+              <label style="display:flex; align-items:center; gap:8px; margin:0;">
+                <input id="pupilToggle" type="checkbox" checked />
+                Pupil layer
+              </label>
+            </div>
+          </div>
+
+          <h4 style="margin:0; color:var(--accent-2); font-weight:500; letter-spacing:0.3px;">Costume</h4>
+          <div class="portrait-grid">
+            <div class="num-field">
+              <label for="outfitStyle">Outfit</label>
+              <select id="outfitStyle"></select>
+            </div>
+            <div class="num-field">
+              <label for="outfitColor">Outfit color</label>
+              <select id="outfitColor"></select>
+            </div>
+            <div class="num-field">
+              <label for="blazerStyle">Blazer</label>
+              <select id="blazerStyle"></select>
+            </div>
+          </div>
+
+          <h4 style="margin:0; color:var(--accent-2); font-weight:500; letter-spacing:0.3px;">Background</h4>
+          <div class="portrait-grid">
+            <div class="num-field">
+              <label for="bgStyle">Background style</label>
+              <select id="bgStyle"></select>
+            </div>
+            <div class="num-field">
+              <label for="bgColor">Background color</label>
+              <select id="bgColor"></select>
+            </div>
+          </div>
+
+          <div class="portrait-actions">
+            <button id="portraitRandom" class="accordion-btn" type="button" style="max-width: 240px;">
+              <span>Randomize Portrait</span>
+              <span class="acc-icon">⟳</span>
+            </button>
+            <button id="portraitDownload" class="accordion-btn" type="button" style="max-width: 240px;">
+              <span>Download PNG</span>
+              <span class="acc-icon">⬇</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+<h3 id="create-share" style="margin-top: 8px;">Share Your Character</h3>
+        <p class="mini-note">
+          Generate a share code for this website. Anyone can paste it to load your name, birthday, gender, and portrait.
+        </p>
+
+        <div class="num-converter">
+          <div class="num-field" style="grid-column: 1 / -1;">
+            <label for="shareCode">Share code</label>
+            <textarea id="shareCode" class="share-code" placeholder="SPERTZ1:..."></textarea>
+          </div>
+        </div>
+
+        <div style="margin-top: 12px; display:flex; gap:10px; flex-wrap:wrap;">
+          <button id="shareGenerate" class="accordion-btn" type="button" style="max-width: 240px;">
+            <span>Generate Code</span>
+            <span class="acc-icon">⧉</span>
+          </button>
+
+          <button id="shareApply" class="accordion-btn" type="button" style="max-width: 240px;">
+            <span>Load Code</span>
+            <span class="acc-icon">✓</span>
+          </button>
+        </div>
+
+        <div class="rule-note" style="margin-top: 12px;">
+          <p style="margin:0;">
+            <b>Status:</b> <span id="shareStatus">Ready.</span>
+          </p>
+        </div>
+
+      </div>
+
+        <div class="grammar-divider"></div>
+
+        <div class="info-card" id="create-cook">
+          <h3 style="margin:0;">SPERTZ Cook</h3>
+          <p class="mini-note">
+            Choose ingredients and seasonings, then pick a preparation method to create a dish. New dishes unlock more options.
+          </p>
+
+          <div class="cook-grid">
+            <div class="info-card">
+              <h4 style="margin:0;">Ingredients</h4>
+              <div id="cookIngredients" class="cook-list" style="margin-top:10px;"></div>
+            </div>
+            <div class="info-card">
+              <h4 style="margin:0;">Seasonings</h4>
+              <div id="cookSeasonings" class="cook-list" style="margin-top:10px;"></div>
+            </div>
+            <div class="info-card">
+              <h4 style="margin:0;">Preparation</h4>
+              <div id="cookMethods" class="cook-list" style="margin-top:10px;"></div>
+            </div>
+          </div>
+
+        <div class="cook-actions">
+          <button id="cookMake" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>Make Dish</span>
+            <span class="acc-icon">✓</span>
+          </button>
+          <button id="cookReset" class="accordion-btn" type="button" style="max-width: 220px;">
+            <span>Clear Bowl</span>
+            <span class="acc-icon">⟳</span>
+          </button>
+          <div class="cook-coins">
+            <span>Coins:</span> <b id="cookCoins">0</b>
+          </div>
+          <div class="cook-coins">
+            <span>Reputation:</span> <b id="cookRep">50</b>
+          </div>
+          <div class="cook-coins">
+            <span>Advanced:</span> <b id="cookAdvancedCount">0/0</b>
+          </div>
+          <div class="rule-note" style="margin:0; flex:1 1 220px;">
+            <p style="margin:0;"><b>Status:</b> <span id="cookStatus">Ready.</span></p>
+          </div>
+        </div>
+
+        <div class="info-card" style="margin-top:12px;">
+          <h4 style="margin:0;">Unlocks</h4>
+          <p class="mini-note" style="margin-top:6px;">Spend coins to unlock more ingredients, seasonings, and methods.</p>
+          <div class="cook-actions">
+            <button id="cookUnlockIng" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Unlock Ingredient (3 coins)</span>
+              <span class="acc-icon">＋</span>
+            </button>
+            <button id="cookUnlockSea" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Unlock Seasoning (3 coins)</span>
+              <span class="acc-icon">＋</span>
+            </button>
+            <button id="cookUnlockMet" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Unlock Method (5 coins)</span>
+              <span class="acc-icon">＋</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="info-card" style="margin-top:12px;">
+          <h4 style="margin:0;">Customers</h4>
+          <p class="mini-note" style="margin-top:6px;">Serve the right dish to earn coins. Ignore if you want; they will leave.</p>
+          <div class="rule-note" style="margin-top:8px;">
+            <p style="margin:0;"><b>Current customer:</b> <span id="cookCustomer">None</span></p>
+          </div>
+          <div class="cook-actions">
+            <button id="cookServe" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Serve Last Dish</span>
+              <span class="acc-icon">✓</span>
+            </button>
+            <button id="cookSkip" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Ignore Customer</span>
+              <span class="acc-icon">⟳</span>
+            </button>
+          </div>
+          <div class="rule-note" style="margin-top:8px;">
+            <p style="margin:0;"><b>Last dish:</b> <span id="cookLastDish">None</span></p>
+          </div>
+        </div>
+
+        <div class="info-card" style="margin-top:12px;">
+          <h4 style="margin:0;">Customer Guidebook</h4>
+          <p class="mini-note" style="margin-top:6px;">Know what each customer likes before serving.</p>
+          <div id="cookCustomerGuide" class="cook-hints" style="margin-top:10px;"></div>
+        </div>
+
+        <div class="info-card" style="margin-top:12px;">
+          <h4 style="margin:0;">Dish Book</h4>
+          <p class="mini-note" style="margin-top:6px;">Collected dishes and the items used. Dishes are final and can’t be turned back.</p>
+          <div id="cookBook" class="cook-book"></div>
+        </div>
+
+        <div class="info-card" style="margin-top:12px;">
+          <h4 style="margin:0;">Recipe Hints</h4>
+          <p class="mini-note" style="margin-top:6px;">Spend coins to reveal a recipe hint for advanced dishes.</p>
+          <div class="cook-actions">
+            <button id="cookHintBuy" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Buy Hint (4 coins)</span>
+              <span class="acc-icon">✦</span>
+            </button>
+          </div>
+          <div id="cookHints" class="cook-hints" style="margin-top:10px;"></div>
+        </div>
+
+          <div class="info-card" style="margin-top:12px;">
+            <h4 style="margin:0;">Save / Load</h4>
+            <p class="mini-note" style="margin-top:6px;">Generate a save code to keep your progress, or paste one to restore.</p>
+            <div class="num-converter">
+              <div class="num-field" style="grid-column: 1 / -1;">
+                <label for="cookSaveCode">Save code</label>
+                <textarea id="cookSaveCode" class="share-code" placeholder="COOK1:..."></textarea>
+              </div>
+            </div>
+            <div class="cook-actions">
+              <button id="cookSave" class="accordion-btn" type="button" style="max-width: 220px;">
+                <span>Generate Code</span>
+                <span class="acc-icon">⧉</span>
+              </button>
+              <button id="cookLoad" class="accordion-btn" type="button" style="max-width: 220px;">
+                <span>Load Code</span>
+                <span class="acc-icon">✓</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grammar-divider"></div>
+
+        <div class="info-card" id="create-car">
+          <h3 style="margin:0;">Car Innovation</h3>
+          <p class="mini-note">
+            Combine features to design your car.
+          </p>
+
+          <div class="num-converter" style="margin-top: 10px;">
+            <div class="num-field" style="grid-column: 1 / -1;">
+              <label for="carShareCode">Optional share code (for name on certificate)</label>
+              <textarea id="carShareCode" class="share-code" placeholder="SPERTZ1:..."></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button id="carShareApply" class="accordion-btn" type="button" style="max-width: 240px;">
+              <span>Load Code</span>
+              <span class="acc-icon">✓</span>
+            </button>
+            <button id="carShareClear" class="accordion-btn" type="button" style="max-width: 240px;">
+              <span>Clear Code</span>
+              <span class="acc-icon">⟲</span>
+            </button>
+          </div>
+          <div class="rule-note" style="margin-top: 10px;">
+            <p style="margin:0;"><b>Status:</b> <span id="carShareStatus">No code loaded.</span></p>
+          </div>
+
+          <div class="car-grid" id="carInnovationOptions" style="margin-top:12px;"></div>
+
+          <div class="cook-actions" style="margin-top:12px;">
+            <button id="carGenerate" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Generate Result</span>
+              <span class="acc-icon">✓</span>
+            </button>
+            <button id="carReset" class="accordion-btn" type="button" style="max-width: 220px;">
+              <span>Clear Choices</span>
+              <span class="acc-icon">⟲</span>
+            </button>
+          </div>
+
+          <div id="carResults" class="car-results"></div>
+        </div>
+
+        <div class="grammar-divider"></div>
+
+        <div class="info-card" id="create-quest">
+          <h3 style="margin:0;">Kopahor Quest: Crystal of the South</h3>
+          <p class="mini-note">
+            You are the new leader of Kopahor. Build supplies, survive the southern march, and decide how to face the crystal conflict.
+          </p>
+
+          <div class="num-converter" style="margin-top: 10px;">
+            <div class="num-field" style="grid-column: 1 / -1;">
+              <label for="questShareCode">Optional share code (for name on certificate)</label>
+              <textarea id="questShareCode" class="share-code" placeholder="SPERTZ1:..."></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button id="questShareApply" class="accordion-btn" type="button" style="max-width: 240px;">
+              <span>Load Code</span>
+              <span class="acc-icon">✓</span>
+            </button>
+            <button id="questShareClear" class="accordion-btn" type="button" style="max-width: 240px;">
+              <span>Clear Code</span>
+              <span class="acc-icon">⟲</span>
+            </button>
+          </div>
+          <div class="rule-note" style="margin-top: 10px;">
+            <p style="margin:0;"><b>Status:</b> <span id="questShareStatus">No code loaded.</span></p>
+          </div>
+
+          <div class="info-card" style="margin-top:12px;">
+            <div class="quest-card">
+              <div>
+                <b id="questChapter">Chapter 1</b>
+                <p class="mini-note" id="questSceneText" style="margin-top:6px;"></p>
+              </div>
+              <div id="questChoices" class="quest-choices"></div>
+              <div id="questOutcome" class="rule-note" style="display:none;"></div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <button id="questContinue" class="accordion-btn" type="button" style="max-width: 220px; display:none;">
+                  <span>Continue</span>
+                  <span class="acc-icon">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card" style="margin-top:12px;">
+            <h4 style="margin:0;">Campaign Status</h4>
+            <div id="questMeters" class="quest-meter" style="margin-top:8px;"></div>
+          </div>
+
+          <div class="info-card" style="margin-top:12px;">
+            <h4 style="margin:0;">Guide Book (Best Ending Path)</h4>
+            <p class="mini-note" style="margin-top:6px;">
+              Recommended choices to reach the best ending with minimal losses. Use as a guide.
+            </p>
+            <details class="rule-note" style="margin-top:8px;">
+              <summary>Open guide</summary>
+              <div id="questGuideList" style="margin-top:8px;"></div>
+            </details>
+          </div>
+
+          <div id="questResults" class="car-results"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="resources">
+  <h2>Extra Resources</h2>
+
+  <div class="phonetics-archive">
+    <div class="info-card">
+      <h3 id="resources-lexicon">Spertz Lexicon (Verbs)</h3>
+      <div class="table-wrap">
+        <table class="archive-table" id="lexiconTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Spertz</th>
+              <th>English meaning</th>
+            </tr>
+          </thead>
+          <tbody id="lexiconBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-months">A Small Story: Why the Months Have Those Names</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          In Spertz culture, months are tiny myths you carry in your pocket.
+          Even the spelling tells you what kind of month you are walking into.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            Most month names begin with a digit-root, in order:
+          </p>
+          <div class="syllable-grid" style="margin-top: 10px;">
+            <span class="pill">ta</span>
+            <span class="pill">re</span>
+            <span class="pill">ki</span>
+            <span class="pill">vo</span>
+            <span class="pill">me</span>
+            <span class="pill">dal</span>
+            <span class="pill">zai</span>
+            <span class="pill">fiu</span>
+          </div>
+        </div>
+
+        <div class="rule-note" style="margin-top: 12px;">
+          <p style="margin:0;">
+            But four months are different: 6, 7, 8, and 12.
+            They begin with <b>xi</b>, the “star-moon” prefix,
+            used for praised and worshiped festival months.
+          </p>
+          <div class="syllable-grid" style="margin-top: 10px;">
+            <span class="pill">xi-sa-ta</span>
+            <span class="pill">xi-se-re</span>
+            <span class="pill">xi-si-ki</span>
+            <span class="pill">xi-so-vo</span>
+          </div>
+        </div>
+
+        <p>
+          The story begins in a small observatory-library on the ridge of <b>Dalren</b>, where the roof is flat,
+          the tea is always too hot, and the sky is treated like a serious text that must be reread every night.
+        </p>
+
+        <p>
+          Three apprentices lived there: <b>Kivor</b>, who collected old calendars like other people collect seashells;
+          <b>Tarim</b>, who insisted every constellation had a personal grudge; and <b>Resul</b>, who could hear
+          the sound of chalk before it even touched the board.
+        </p>
+
+        <p>
+          One evening, their mentor <b>Zaimel</b> arrived carrying a wooden box full of thin stone tiles.
+          Each tile had a month name carved into it. He placed them on the table in a neat line, all twelve,
+          like a parade that forgot it was supposed to be solemn.
+        </p>
+
+        <p>
+          “Look carefully,” Zaimel said. “Spertz months wear their meaning on the first syllable.”
+        </p>
+
+        <p>
+          Kivor pointed at the beginning of the line. “So the plain months start with numbers.
+          <b>tarul</b>, <b>resur</b>, <b>kilup</b>, <b>votir</b>, <b>meka</b>… it’s counting.”
+        </p>
+
+        <p>
+          “Exactly,” said Zaimel. “Eight months are the steady rhythm of the world. Work months.
+          Study months. Repair-the-roof-before-it-leaks months. Their names begin with the familiar digit-roots:
+          ta, re, ki, vo, me, dal, zai, fiu.
+          A calendar that can be recited like arithmetic is a calendar that can survive a tired mind.”
+        </p>
+
+        <p>
+          Tarim frowned and tapped the sixth tile. “Then why does this one cheat? Why does <b>xisata</b> start with <b>xi</b>?”
+        </p>
+
+        <p>
+          Zaimel smiled, which was a dangerous expression on him. It usually meant someone was about to do math with emotions.
+        </p>
+
+        <p>
+          “Because those months are not counted,” he said. “They are celebrated.”
+        </p>
+
+        <p>
+          He lifted the four star-month tiles and set them aside like royal guests:
+          <b>xisata</b>, <b>xisere</b>, <b>xisiki</b>, and <b>xisovo</b>.
+          The light from the lamps caught the carvings and made them look slightly alive,
+          as if they were about to ask for dessert.
+        </p>
+
+        <p>
+          “In the old city of <b>Vokar</b>,” Zaimel continued, “people believed the sky had a second moon that only appeared
+          during holidays. Not a real object, of course. More like an agreement between humans and the universe:
+          <i>we will pretend the night is kinder, and the night will pretend we deserve it.</i>”
+        </p>
+
+        <p>
+          Resul leaned forward. “So <b>xi</b> means…”
+        </p>
+
+        <p>
+          “Star-moon,” said Zaimel. “A worship prefix. Praise carried at the front of the word.
+          Those months are the ones with the biggest gatherings, the brightest lanterns, the longest songs,
+          and the most questionable decisions made after midnight.”
+        </p>
+
+        <p>
+          Kivor grinned. “Questionable decisions sound culturally important.”
+        </p>
+
+        <p>
+          “Extremely,” Zaimel replied. “Some traditions require them.”
+        </p>
+
+        <p>
+          Tarim picked up <b>xisiki</b> and squinted. “So these are festival months. But why those exact numbers?
+          Why 6, 7, 8… and then 12?”
+        </p>
+
+        <p>
+          Zaimel began arranging the tiles again, but this time he slid the normal months slightly closer together,
+          like ordinary soldiers, and left generous space around the <b>xi-</b> months, like they needed room to dance.
+        </p>
+
+        <p>
+          “Six, seven, and eight are the summer crest,” he said. “The harvest begins to brag.
+          People thank their fields, their ovens, their tired hands. In <b>xisata</b> they honor arrival.
+          In <b>xisere</b> they honor return. And in <b>xisiki</b>… they honor anything that survived long enough
+          to be laughed at.”
+        </p>
+
+        <p>
+          “And twelve?” Resul asked.
+        </p>
+
+        <p>
+          Zaimel held up <b>xisovo</b> between two fingers. “Twelve is the closing gate.
+          It is the month where everyone pretends to be generous and then quietly hopes the year forgives them anyway.
+          So it receives <b>xi</b> too.
+          It is not just the end of counting. It is the end of bargaining.”
+        </p>
+
+        <p>
+          Kivor lifted <b>meka</b> and laughed. “So the calendar is basically: eight sensible months,
+          four dramatic ones.”
+        </p>
+
+        <p>
+          “That is one way to translate it,” Zaimel said. “A better way is:
+          eight months teach you to build,
+          and four months remind you why you ever wanted to.”
+        </p>
+
+        <p>
+          Tarim stared at the line of tiles, then nodded slowly, as if the months had just confessed a secret.
+          “So if you see <b>xi</b> at the start…”
+        </p>
+
+        <p>
+          “You prepare,” said Zaimel. “You eat more. You sleep more. You practice smiling like you mean it.
+          And you never, ever promise to just stay for one song.”
+        </p>
+
+        <p>
+          Resul wrote the rule at the bottom of the board, underlined once:
+          <b>xi months are praised months.</b>
+          Then, because he was Resul, he underlined it a second time, just in case the universe was watching.
+        </p>
+
+        <div class="rule-note" style="margin-top: 16px;">
+          <p style="margin:0;">
+            In short:
+          </p>
+          <p style="margin:10px 0 0;">
+            <b>Eight months</b> begin with digit-roots (ta re ki vo me dal zai fiu).<br>
+            <b>Four festival months</b> begin with <b>xi</b>, the star-moon praise prefix (6, 7, 8, 12).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-bases">A Small Story: Why the West Counts in Base-8 and the South in Base-16</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          Spertz is the language of Onia, a nation that cast long shadows across the map.
+          When Onia expanded west and south, it carried Spertz with it — but it did not rewrite every habit.
+          Numbers are stubborn things.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            <b>West:</b> Base-8 counting survives.<br>
+            <b>South:</b> Base-16 counting remains the civic standard.
+          </p>
+        </div>
+
+        <p>
+          In the west, the old river guilds had always counted by hands and stones. Eight was the reliable unit:
+          four fingers per hand, two hands per bundle. Even after Onia’s surveyors arrived with neat base-10 ledgers,
+          the docks and mills kept their old measures. A basket was eight. A cart was eight baskets.
+          The numbers were already tied to the shape of work.
+        </p>
+
+        <p>
+          The new schools taught Spertz grammar, but the old counting survived in the marketplace.
+          So Spertz numbers were simply adapted: the words changed, the base did not.
+          An Onian clerk could read a western invoice, but everyone in the west knew the totals by instinct.
+        </p>
+
+        <p>
+          The south was different. Onia conquered its cities, but it did not replace their engineers.
+          Those cities were built on sixteen-unit grids: sixteen paces per column, sixteen tiles per panel,
+          sixteen lanterns per street segment. Their crafts were tuned to powers of two long before the empire arrived.
+        </p>
+
+        <p>
+          The southern academies accepted Spertz for law and diplomacy,
+          yet kept base-16 for architecture, astronomy, and trade.
+          It was easier to keep the math that made their bridges hold.
+        </p>
+
+        <p>
+          Over time, Spertz grew a polite duality:
+          base-10 for international writing, base-8 in the west, base-16 in the south.
+          A single language, three habits of counting — and each one learned to live with the others.
+        </p>
+
+        <div class="rule-note" style="margin-top: 16px;">
+          <p style="margin:0;">
+            In short:
+          </p>
+          <p style="margin:10px 0 0;">
+            The west keeps base-8 because it matches the old work units and trade bundles.<br>
+            The south keeps base-16 because its engineering and city planning were already built on it.<br>
+            Onia taught Spertz, but it could not erase how people count.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-spertz">A Small Story: Why the Language Is Called Spertz</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          Long before it was called Spertz, the language was called <b>Oniaga</b> — simply “the language of Onia.”
+          It spread because Onia’s influence spread, and for a time the name itself sounded like authority.
+        </p>
+
+        <p>
+          Then Onia’s reach went too far. In the land of <b>Kopahor</b>, a leader whose name the old records shorten
+          to <b>Haviel</b> convinced rival cities to stop fighting each other and stand together.
+          The argument was simple: if Onia could make them share a language, then they could share a purpose too.
+        </p>
+
+        <p>
+          The conflict that followed did not end in collapse, but in negotiation. Onia agreed to step back.
+          The treaties kept Oniaga as the international language — not out of loyalty, but out of practicality.
+          Everyone had already learned it; no one wanted a second generation of confusion.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            To mark the peace, the name changed.
+          </p>
+          <p style="margin:10px 0 0;">
+            <b>Spertz</b> = <b>Spert + Si</b> (“men + women”), reshaped into a new spelling: <b>SPERTZ</b>.
+          </p>
+        </div>
+
+        <p>
+          In Kopahor, the old consonant clusters were never comfortable. People broke the word apart and said
+          <b>su-pe-ri-tsi</b> instead. The peace council honored this effort and declared <b>su-pe-ri-tsi</b>
+          the “official” pronunciation — a nod to Kopahor’s role in ending the war.
+        </p>
+
+        <p>
+          Almost no one follows it. Diplomats say <b>Spertz</b> because it is shorter. Merchants say <b>Spertz</b>
+          because it is faster. Teachers say <b>Spertz</b> because they have a syllabus to finish.
+          But in Kopahor, elders still say <b>su-pe-ri-tsi</b> at ceremonies, and every crowd knows why.
+        </p>
+
+        <p>
+          The name is a treaty you can speak. The pronunciation you choose says which story you remember.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-kopahor">A Small Story: The History of Kopahor</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          Before Kopahor was its own name on maps, it was a district of the vast eastern country <b>Pesimura</b>.
+          Pesimura had mountains for safety and mines for wealth, but little open land for food.
+          Kopahor had the opposite: no mountains, a coastline, and wide access to the sea.
+        </p>
+
+        <p>
+          For generations, Pesimura sent metal out through Kopahor’s ports and pulled grain back in.
+          The trade kept the larger country alive, but it also trained Kopahor to think beyond borders.
+          They learned how to negotiate, how to ship, how to read a ledger as if it were a second language.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            Pesimura relied on Kopahor’s routes for food.
+            Kopahor relied on Pesimura’s mountains for security.
+          </p>
+        </div>
+
+        <p>
+          When Onia attacked, Pesimura’s weakness was exposed. The armies were large but not ready,
+          and the food lines were too thin. A huge land can still be a hungry land.
+          Pesimura surrendered.
+        </p>
+
+        <p>
+          Kopahor was furious. The district argued that surrender was not survival — it was surrender to fear.
+          They pushed for negotiation, for a settlement that would keep their ports open and their people safe.
+          Pesimura hesitated, then listened.
+        </p>
+
+        <p>
+          The decision that followed reshaped the region: Pesimura allowed Kopahor to separate
+          and make its own decisions. It was an admission of weakness, but also a gesture of respect.
+          Kopahor would speak for itself.
+        </p>
+
+        <p>
+          Under Haviel’s leadership, Kopahor helped broker peace with Onia.
+          Pesimura, once the parent, became the proud neighbor. They had lost a district,
+          but gained a stabilizing ally.
+        </p>
+
+        <p>
+          When Haviel’s children took his place, they kept the same promise:
+          commerce without conquest, negotiation without fear.
+          The ports stayed open. The fields were planted.
+          And a former district learned how to be a country.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-faith">A Small Story: The Returning Gods</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          Across Onia and the many lands that share the Spertz family, faith is a daily habit.
+          People keep small rituals — a cup of water before dawn, a ribbon tied to a doorway,
+          a whispered promise before a long journey — and they say the gods are never far.
+        </p>
+
+        <p>
+          The most beloved is the goddess of fate, <b>Lunaiya</b>.
+          She is said to always leave a message: a bent coin found in the dust,
+          a bird that repeats a name, a scribble in the margins of a book.
+          To the faithful, it is never coincidence.
+        </p>
+
+        <p>
+          The main god is quieter — colder, older. Some believed this god had died long ago.
+          Then a mysterious sign appeared: a winter that arrived on time after decades of delay,
+          or a night where the stars held still and would not move.
+          The faithful said the god was alive again.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            In this faith, blessings are expected to return.
+            You give, and something gives back.
+          </p>
+        </div>
+
+        <p>
+          Then the strangest thing happened. A group of people appeared across the lands —
+          in separate cities, at the same hour — carrying power no one could explain.
+          Some healed. Some spoke in voices that echoed like a temple.
+          A few carried the very names of the gods themselves.
+        </p>
+
+        <p>
+          The streets filled with lanterns. Bells rang for weeks.
+          People said the gods had stepped down into the world, or sent pieces of themselves.
+          Whether it was miracle or mystery, the celebrations did not end quickly.
+        </p>
+
+        <p>
+          To this day, some still search for the next message from Lunaiya,
+          and some still watch the sky for the cold god’s sign — not because they doubt,
+          but because in Spertz lands, waiting is also a form of praise.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-powers">A Small Story: Superpowers Blend In</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          The sun god and the frost-snow goddess were a couple long ago — the religious have always known it.
+          But the superpowered people arrived in Pesimura for a different reason: they were escaping a disaster.
+          They landed in <b>Pesimura</b>, where mountains held metals and winters held silence.
+        </p>
+
+        <p>
+          Pesimura found a new way to survive: it trained the gifted. Superpowered people needed structure,
+          and Pesimura had metal, stone, and stubborn patience. Training centers rose beside the mines,
+          and the country sold safety, not conquest.
+        </p>
+
+        <p>
+          In return, the gifted learned to make small food with their powers — warm grains that sprouted in days,
+          water pulled clean from the ground. It was not magic enough to feed everyone, but it was enough
+          to keep the training cities alive.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            Pesimura traded metal for discipline.
+            The gifted traded power for food.
+          </p>
+        </div>
+
+        <p>
+          Their daughter was thrown far away to <b>Whereland</b>, a place outside the Northern League
+          (the league of all Spertz-speaking nations, named for the northern hemisphere they shared).
+          She built a company there and unveiled a new energy source: <b>life</b> itself — a steady power drawn
+          from growth, motion, and renewal.
+        </p>
+
+        <p>
+          Whereland joined the League not by pressure but by relief; energy worries disappeared.
+          The daughter rose further, becoming the god of spacetime, and opened a second space — a pocket realm
+          that could host training grounds and food plantations beyond any border.
+        </p>
+
+        <p>
+          After that, the League was never short on resources again.
+          Superpowers blended into daily life, not as fear, but as infrastructure.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-league">A Small Story: The Spertz League</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          The Northern League began as a practical alliance of Spertz-speaking nations, all in the northern hemisphere.
+          Its name was geographic, not poetic.
+        </p>
+
+        <p>
+          When the leader of Whereland died, their final request was simple:
+          “Call it <b>Spertz</b>.” The League agreed. It was a memorial, and a promise to keep the shared language
+          at the center of their cooperation. From then on, the Northern League became the <b>Spertz League</b>.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            The League has six main members, each with a distinct role:
+          </p>
+        </div>
+
+        <div class="marker-grid">
+          <div class="marker-row">
+            <h4>Kopahor</h4>
+            <p>Government center and diplomatic core.</p>
+          </div>
+          <div class="marker-row">
+            <h4>Pesimura</h4>
+            <p>Army center and defensive coordination.</p>
+          </div>
+          <div class="marker-row">
+            <h4>Onia</h4>
+            <p>Trade and economic center.</p>
+          </div>
+          <div class="marker-row">
+            <h4>Whereland</h4>
+            <p>Technology center and energy systems.</p>
+          </div>
+          <div class="marker-row">
+            <h4>Sifyre</h4>
+            <p>Agriculture center in the second space.</p>
+          </div>
+          <div class="marker-row">
+            <h4>Outershay</h4>
+            <p>A mysterious member that remains deliberately unknown.</p>
+          </div>
+        </div>
+
+        <p>
+          The League’s strength is balance: each member holds a pillar the others lack.
+          It is a map drawn not by borders, but by functions.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-card story-card">
+      <h3 id="resources-life">A Small Story: Everyday Life in the Spertz League</h3>
+
+      <button class="story-toggle" type="button" aria-expanded="false">
+        <span>Read story</span>
+        <span class="acc-icon">+</span>
+      </button>
+
+      <div class="story-panel">
+        <p class="mini-note">
+          Life in the Spertz League changed twice: once when the old systems were still fragile,
+          and again after the life-energy breakthrough reshaped the daily routine.
+        </p>
+
+        <p>
+          Before, meals were simple and local, built around whatever a city could grow or trade that week.
+          Travel was functional but slow. Homes were real walls, real doors, and a real limit to space.
+          Convenience existed, but it had edges.
+        </p>
+
+        <p>
+          After the life-energy system spread, the rhythm of ordinary life became fast, soft, and abundant.
+          Citizens choose from huge daily menus, with dishes from every member of the League —
+          and superpowered cooks turn them into finished meals in one or two minutes, sauces included.
+        </p>
+
+        <div class="rule-note">
+          <p style="margin:0;">
+            Daily life now centers on speed, choice, and expansion.
+          </p>
+        </div>
+
+        <p>
+          Transportation is everywhere: layered rails, quiet sky-lanes, and short-range gates that make long distances feel small.
+          Commuting is less about “going far” and more about “arriving instantly.”
+        </p>
+
+        <p>
+          Housing grew upward and inward. Massive residential complexes rise over each city,
+          while Whereland sells personal “virtual space” that expands a room beyond its walls.
+          A small apartment can unfold into a private garden, a music studio, or a starfield hall.
+        </p>
+
+        <p>
+          The most luxurious places are the <b>Whereland Tower</b> and the <b>Kopahor Tower</b>.
+          They are reserved for government workers and company owners.
+          On the top floors, residents often own full virtual worlds — the tower appears as a single door,
+          but inside is an entire landscape of nature or any style they choose.
+        </p>
+
+        <p>
+          In the Spertz League, normal life is no longer about survival.
+          It is about designing how you want your day to feel.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    &copy; 2026 Spertz.
+  </footer>
+</body>
+</html>
